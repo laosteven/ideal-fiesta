@@ -1,9 +1,15 @@
 import { container, title } from "assets/jss/material-kit-react.jsx";
-import image from "assets/img/landing-bg.jpg";
+import imgTeams from "assets/img/teams.jpg";
+import imgSeason from "assets/img/season.jpg";
 
 const landingPageStyle = {
-  background: {
-    background: "url(" + image + ") no-repeat center center fixed"
+  bgTeams: {
+    background: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(" + imgTeams + ") no-repeat center center",
+    backgroundSize: "cover",
+  },
+  bgSeason: {
+    background: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(" + imgSeason + ") no-repeat center center",
+    backgroundSize: "cover"
   },
   container: {
     zIndex: "12",

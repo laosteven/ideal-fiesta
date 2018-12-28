@@ -22,15 +22,13 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
-import image from "assets/img/landing-bg2.jpg";
-
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
-      <div className={classes.background}>
+      <div>
         <Header
           color="transparent"
           routes={dashboardRoutes}
@@ -39,20 +37,20 @@ class LandingPage extends React.Component {
           fixed
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "danger"
           }}
           {...rest}
         />
-        <Parallax>
+        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Welcome to Beast!</h1>
                 <h4>
-                  Created in 2010 in Montreal with the merger of 
-                  Anglerfish. BEAST! and Let's Sink Together 4, 
-                  BEAST's main goal has always been to offer the 
-                  best Dragon Boat experience to its members. 
+                  Created in 2010 in Montreal with the merger of
+                  Anglerfish. BEAST! and Let's Sink Together 4,
+                  BEAST's main goal has always been to offer the
+                  best Dragon Boat experience to its members.
                 </h4>
                 <br />
                 <Button
@@ -68,17 +66,34 @@ class LandingPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)}>
-          <img 
-            className={classes.image}
-            alt="Team family"
-            src={image} />
+        <div className={classNames(classes.main)}>
           <div className={classes.container}>
             <ProductSection />
-            <TeamSection />
+          </div>
+        </div>
+
+        <div className={classNames(classes.main)}>
+          <div className={classes.bgTeams}>
+            <div className={classes.container}>
+              <TeamSection />
+            </div>
+          </div>
+        </div>
+
+        <div className={classNames(classes.main)}>
+          <div className={classes.container}>
             <WorkSection />
           </div>
         </div>
+
+        <div className={classNames(classes.main)}>
+          <div className={classes.bgSeason}>
+            <div className={classes.container}>
+              <WorkSection />
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </div>
     );
