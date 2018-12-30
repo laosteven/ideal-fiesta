@@ -4,17 +4,36 @@ import imgSeason from "assets/img/season.jpg";
 
 const landingPageStyle = {
   bgTeams: {
-    background: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(" + imgTeams + ") no-repeat center center",
-    backgroundSize: "cover",
+    background:
+      "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" +
+      imgTeams +
+      ") no-repeat center center",
+    backgroundSize: "cover"
   },
   bgSeason: {
-    background: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(" + imgSeason + ") no-repeat center center",
+    background:
+      "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" +
+      imgSeason +
+      ") no-repeat center center",
     backgroundSize: "cover"
   },
   container: {
     zIndex: "12",
     color: "#FFFFFF",
     ...container
+  },
+  landing: {
+    textAlign: "center"
+  },
+  landingBtn: {
+    backgroundColor: "#99999985",
+    "&:hover": {
+      backgroundColor: "#999999a6"
+    }
+  },
+  hsep: {
+    width: "50px",
+    marginBottom: "25px"
   },
   title: {
     ...title,

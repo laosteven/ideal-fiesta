@@ -18,9 +18,11 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
+import IntroductionSection from "./Sections/IntroductionSection.jsx";
+import TeamsSection from "./Sections/TeamsSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
+
+import Logo from "assets/img/beast-logo.png";
 
 const dashboardRoutes = [];
 
@@ -32,7 +34,7 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Beast Dragon Boat Club"
+          brand={Logo}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -42,58 +44,55 @@ class LandingPage extends React.Component {
           {...rest}
         />
         <Parallax filter image={require("assets/img/landing-bg.jpg")}>
-          <div className={classes.container}>
+          <div className={classNames(classes.container, classes.landing)}>
             <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Welcome to Beast!</h1>
-                <h4>
-                  Created in 2010 in Montreal with the merger of
-                  Anglerfish. BEAST! and Let's Sink Together 4,
-                  BEAST's main goal has always been to offer the
-                  best Dragon Boat experience to its members.
-                </h4>
+              <GridItem xs={12} sm={12} md={10}>
+                <h1 className={classes.title}>Beast Dragonboat Club</h1>
+                <hr className={classes.hsep} />
+                <h5>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  blandit neque dui, id commodo turpis maximus in. Vivamus
+                  maximus ligula a rhoncus pellentesque. Etiam nec ultricies
+                  urna. Nullam sit amet magna sed ligula bibendum vehicula.
+                  Mauris eu elit ante. Integer elit magna, pharetra in nisl
+                  vitae, efficitur efficitur dui. Sed ut molestie massa.
+                </h5>
                 <br />
                 <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  className={classes.landingBtn}
                   target="_blank"
                   rel="noopener noreferrer"
+                  size="lg"
+                  round
                 >
-                  <i className="fas fa-play" />Watch video
+                  Learn More
                 </Button>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
+
         <div className={classNames(classes.main)}>
           <div className={classes.container}>
-            <ProductSection />
+            <IntroductionSection />
           </div>
-        </div>
 
-        <div className={classNames(classes.main)}>
           <div className={classes.bgTeams}>
             <div className={classes.container}>
-              <TeamSection />
+              <TeamsSection />
             </div>
           </div>
-        </div>
 
-        <div className={classNames(classes.main)}>
           <div className={classes.container}>
             <WorkSection />
           </div>
-        </div>
 
-        <div className={classNames(classes.main)}>
           <div className={classes.bgSeason}>
             <div className={classes.container}>
               <WorkSection />
             </div>
           </div>
         </div>
-
         <Footer />
       </div>
     );

@@ -23,32 +23,36 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://twitter.com/CreativeTim"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
+        <CustomDropdown
+          left
+          hoverColor="danger"
+          dropdownHeader="Sections"
+          buttonIcon="fa fa-list-alt"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            "Introduction",
+            "Teams",
+            "Season",
+            { divider: true },
+            "Register",
+            { divider: true },
+            "About"
+          ]}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Follow us on Facebook!"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://www.facebook.com/BeastDragonboatClub"
             target="_blank"
             className={classes.navLink}
           >
@@ -59,13 +63,13 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Follow us on Instagram!"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.instagram.com/beast_dragonboatclub"
             target="_blank"
             className={classes.navLink}
           >

@@ -25,15 +25,8 @@ function Footer({ ...props }) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.center}>
-          &copy; 2018 , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.facebook.com/BeastDragonboatClub/"
-            className={aClasses}
-            target="_blank"
-          >
-            Beast Dragon Boat Club
-          </a>.
+          &copy; 2018 , made with <Favorite className={classes.icon} /> by Beast
+          Dragonboat Club.
         </div>
       </div>
     </footer>

@@ -8,11 +8,14 @@ import {
   dangerColor,
   roseColor,
   transition,
-  boxShadow,
-  drawerWidth
+  boxShadow
 } from "assets/jss/material-kit-react.jsx";
 
 const headerStyle = {
+  logo: {
+    width: "62px",
+    filter: "brightness(0) invert(1)"
+  },
   appBar: {
     display: "flex",
     border: "0",
@@ -129,7 +132,7 @@ const headerStyle = {
     transitionProperty: "top, bottom, width",
     transitionDuration: ".2s, .2s, .35s",
     transitionTimingFunction: "linear, linear, ease",
-    width: drawerWidth,
+    width: "100px",
     ...boxShadow,
     position: "fixed",
     display: "block",

@@ -128,6 +128,9 @@ const customDropdownStyle = theme => ({
     width: "20px",
     height: "20px"
   },
+  buttonFaIcon: {
+    fontSize: "20px !important"
+  },
   caret: {
     transition: "all 150ms ease-in",
     display: "inline-block",

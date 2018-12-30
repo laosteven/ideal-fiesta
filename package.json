@@ -1,5 +1,5 @@
 {
-  "name": "material-kit-react",
+  "name": "beast-landing",
   "version": "1.3.0",
   "private": true,
   "main": "dist/index.js",
@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-plugin-module-resolver": "3.1.1",
     "babel-plugin-import-rename": "1.0.1",
+    "babel-plugin-module-resolver": "3.1.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-preset-es2015": "6.24.1"
@@ -39,6 +39,7 @@
     "prettier": "1.14.3"
   },
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
