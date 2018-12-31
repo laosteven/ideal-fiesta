@@ -19,6 +19,7 @@ import IntroductionSection from "./Sections/IntroductionSection.jsx";
 import TeamsSection from "./Sections/TeamsSection.jsx";
 import ObjectiveSection from "./Sections/ObjectiveSection.jsx";
 import SeasonSection from "./Sections/SeasonSection.jsx";
+import CarouselSection from "./Sections/CarouselSection.jsx";
 import ContactSection from "./Sections/ContactSection.jsx";
 import AboutSection from "./Sections/AboutSection.jsx";
 
@@ -64,6 +65,12 @@ class LandingPage extends React.Component {
           <div className={classes.bgSeason}>
             <div className={classes.container} />
             <SeasonSection />
+          </div>
+
+          <div className={classes.grey}>
+            <div className={classes.container}>
+              <CarouselSection />
+            </div>
           </div>
 
           <div className={classes.container}>

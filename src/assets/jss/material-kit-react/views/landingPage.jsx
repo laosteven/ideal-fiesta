@@ -36,7 +36,7 @@ const landingPageStyle = {
     zIndex: "3"
   },
   grey: {
-    background: "#E5E5E5"
+    background: "#303030"
   }
 };
 
