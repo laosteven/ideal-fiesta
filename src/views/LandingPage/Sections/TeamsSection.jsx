@@ -25,7 +25,7 @@ class TeamsSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h3 className={classes.title}>TEAMS</h3>
+            <h2 className={classes.title}>Teams</h2>
             <h5 className={classes.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>

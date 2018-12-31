@@ -4,10 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import { List, ListItem, withStyles } from "@material-ui/core";
-
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import { withStyles } from "@material-ui/core";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
@@ -17,17 +14,10 @@ function Footer({ ...props }) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.center}>
-          &copy; 2018 , made with <Favorite className={classes.icon} /> by Beast
-          Dragonboat Club.
-        </div>
+        <div className={classes.center}>&copy; 2018, Beast Dragonboat Club</div>
       </div>
     </footer>
   );

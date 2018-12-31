@@ -21,9 +21,7 @@ class IntroductionSection extends React.Component {
             <img className={classes.united} src={United} alt="United Beast" />
           </GridItem>
           <GridItem xs={12} sm={12} md={7}>
-            <h3>
-              <b>WHO ARE WE?</b>
-            </h3>
+            <h2 className={classes.title}>Who are we?</h2>
             <p className={classes.justify}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               blandit neque dui, id commodo turpis maximus in. Vivamus maximus

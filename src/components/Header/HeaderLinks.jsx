@@ -22,27 +22,21 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          left
-          hoverColor="danger"
-          dropdownHeader="Sections"
-          buttonIcon="fa fa-list-alt"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          dropdownList={[
-            "Introduction",
-            "Teams",
-            "Season",
-            { divider: true },
-            "Register",
-            { divider: true },
-            "About"
-          ]}
-        />
-      </ListItem>
+      {/* <ListItem className={classes.listItem}>
+        <Tooltip
+          title="Register to Beast!"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fa fa-user-plus"} />
+          </Button>
+        </Tooltip>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -76,6 +70,43 @@ function HeaderLinks({ ...props }) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
+        <CustomDropdown
+          left
+          hoverColor="danger"
+          buttonIcon="fa fa-list-alt"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            "Who are we?",
+            "Teams",
+            "What we do?",
+            "Season",
+            "About"
+          ]}
+        />
+      </ListItem> */}
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          left
+          hoverColor="danger"
+          buttonIcon="fa fa-cog"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          dropdownList={[
+            "Join Beast!",
+            { divider: true },
+            "Login",
+            { divider: true },
+            "English",
+            "Français"
+          ]}
+        />
       </ListItem>
     </List>
   );

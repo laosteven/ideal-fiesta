@@ -3,7 +3,7 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
 const teamsStyle = {
   section: {
-    padding: "70px 0",
+    padding: "100px 0 150px 0",
     textAlign: "center"
   },
   title: {
@@ -21,7 +21,8 @@ const teamsStyle = {
   },
   cardTitle: {
     ...cardTitle,
-    color: "#fff"
+    color: "#fff",
+    fontFamily: '"Roboto Slab", "Helvetica", "Arial", sans-serif'
   },
   description: {
     color: "#fff"
