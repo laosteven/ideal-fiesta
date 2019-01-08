@@ -45,7 +45,9 @@ class LandingPage extends React.Component {
           {...rest}
         />
 
-        <LandingSection />
+        <div className={classes.bgLanding}>
+          <LandingSection />
+        </div>
 
         <div className={classNames(classes.main)}>
           <div className={classes.container}>

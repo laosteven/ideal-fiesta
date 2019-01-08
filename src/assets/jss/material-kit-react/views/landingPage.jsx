@@ -1,9 +1,24 @@
 import { container } from "assets/jss/material-kit-react.jsx";
-import imgTeams from "assets/img/teams.jpg";
+import imgLanding from "assets/img/landing-bg.jpg";
+import imgTeams from "assets/img/season.jpg";
 import imgSeason from "assets/img/season.jpg";
 import imgFooter from "assets/img/footer.jpg";
 
 const landingPageStyle = {
+  bgLanding: {
+    background:
+      "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" +
+      imgLanding +
+      ") no-repeat center center",
+    backgroundSize: "cover",
+    height: "100vh",
+    maxHeight: "1000px",
+    margin: "0",
+    padding: "0",
+    border: "0",
+    display: "flex",
+    alignItems: "center"
+  },
   bgTeams: {
     background:
       "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" +
