@@ -11,11 +11,7 @@ const landingPageStyle = {
       imgLanding +
       ") no-repeat center center",
     backgroundSize: "cover",
-    height: "100vh",
-    maxHeight: "1000px",
-    margin: "0",
-    padding: "0",
-    border: "0",
+    minHeight: "100vh",
     display: "flex",
     alignItems: "center"
   },
