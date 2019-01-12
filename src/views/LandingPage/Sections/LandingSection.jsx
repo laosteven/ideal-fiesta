@@ -1,14 +1,9 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-
-// @material-ui/icons
-import Schedule from "@material-ui/icons/Schedule";
-import LocationOn from "@material-ui/icons/LocationOn";
 
 // core components
+import CalendarEvent from "components/CalendarEvent/CalendarEvent.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -46,81 +41,37 @@ class LandingSection extends React.Component {
           <GridItem className={classes.gridCalendar} xs={12} sm={12} md={5}>
             <Card className={classes.card}>
               <CardBody>
-                <h3 className={classes.eventHeader}>Calendar</h3>
+                <h3 className={classes.eventHeader}>Competition days</h3>
                 <div className={classes.eventContainer}>
-                  <a
-                    href="http://www.gwndragonboat.com/default.asp?id=toronto-island"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <div className={classes.eventRow1}>
-                      <div className={classes.eventCalStart}>
-                        <div className={classes.eventDate}>15</div>
-                        <div className={classes.eventMonth}>jun</div>
-                      </div>
-                      <div className={classes.eventCalEnd}>
-                        <div className={classes.eventDateEnd}>-16</div>
-                      </div>
-                      <div className={classes.eventDetails}>
-                        <div className={classes.eventTitle}>
-                          Toronto Festival
-                        </div>
-                        <div className={classes.eventDesc}>
-                          <Schedule className={classes.eventIcon} /> 09:00 AM
-                          <br />
-                          <LocationOn className={classes.eventIcon} /> 9 Queens
-                          Quay W, Toronto, ON M5J 2H3
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://www.missiondragonboat.com/en/event/mtl-challenge/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <div className={classes.eventRow2}>
-                      <div className={classes.eventCalStart}>
-                        <div className={classes.eventDate}>06</div>
-                        <div className={classes.eventMonth}>jul</div>
-                      </div>
-                      <div className={classes.eventCalEnd}>
-                        <div className={classes.eventDateEnd}>-07</div>
-                      </div>
-                      <div className={classes.eventDetails}>
-                        <div className={classes.eventTitle}>MTL Challenge</div>
-                        <div className={classes.eventDesc}>
-                          <Schedule className={classes.eventIcon} /> 09:00 AM
-                          <br />
-                          <LocationOn className={classes.eventIcon} /> Parc
-                          Jean-Drapeau, Montreal, QC H3C 1A9
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-
-                  <a href="" rel="noopener noreferrer" target="_blank">
-                    <div
-                      className={classNames(
-                        classes.eventRow3,
-                        classes.eventRowCancelled
-                      )}
-                    >
-                      <div className={classes.eventCalStart}>
-                        <div className={classes.eventDate}>01</div>
-                        <div className={classes.eventMonth}>aug</div>
-                      </div>
-                      <div className={classes.eventDetails}>
-                        <div className={classes.eventTitle}>Title</div>
-                        <div className={classes.eventDesc}>
-                          <Schedule className={classes.eventIcon} /> Time
-                          <br />
-                          <LocationOn className={classes.eventIcon} /> Location
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                  <CalendarEvent
+                    link="http://www.gwndragonboat.com/default.asp?id=toronto-island"
+                    dayStart="15"
+                    dayEnd="16"
+                    month="jun"
+                    title="Toronto Festival"
+                    time="09:00 AM"
+                    location="9 Queens Quay W, Toronto, ON M5J 2H3"
+                    color="#fb4646"
+                  />
+                  <CalendarEvent
+                    link="https://www.missiondragonboat.com/en/event/mtl-challenge/"
+                    dayStart="06"
+                    dayEnd="07"
+                    month="jul"
+                    title="Montreal Challenge"
+                    time="09:00 AM"
+                    location="Parc Jean-Drapeau, Montreal, QC H3C 1A9"
+                    color="#00adff"
+                  />
+                  <CalendarEvent
+                    dayStart="01"
+                    month="aug"
+                    title="TBD"
+                    time="TBD"
+                    location="TBD"
+                    color="#fbaf5d"
+                    isDisabled
+                  />
                 </div>
               </CardBody>
             </Card>
