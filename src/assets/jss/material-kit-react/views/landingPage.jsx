@@ -1,6 +1,6 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 import imgLanding from "assets/img/landing-bg.jpg";
-import imgTeams from "assets/img/season.jpg";
+import imgTeams from "assets/img/teams.jpg";
 import imgSeason from "assets/img/season.jpg";
 import imgFooter from "assets/img/footer.jpg";
 

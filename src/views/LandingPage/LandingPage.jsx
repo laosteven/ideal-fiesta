@@ -9,6 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
+import Nav from "components/Nav/Nav.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
@@ -45,37 +46,37 @@ class LandingPage extends React.Component {
           {...rest}
         />
 
-        <div className={classes.bgLanding}>
+        <div id="#bdbc" className={classes.bgLanding}>
           <LandingSection />
         </div>
 
         <div className={classNames(classes.main)}>
-          <div className={classes.container}>
+          <div id="#whoarewe" className={classes.container}>
             <IntroductionSection />
           </div>
 
-          <div className={classes.bgTeams}>
+          <div id="#teams" className={classes.bgTeams}>
             <div className={classes.container}>
               <TeamsSection />
             </div>
           </div>
 
-          <div className={classes.container}>
+          <div id="#whatwedo" className={classes.container}>
             <ObjectiveSection />
           </div>
 
-          <div className={classes.bgSeason}>
+          <div id="#season" className={classes.bgSeason}>
             <div className={classes.container} />
             <SeasonSection />
           </div>
 
-          <div className={classes.grey}>
+          <div id="#pictures" className={classes.grey}>
             <div className={classes.container}>
               <CarouselSection />
             </div>
           </div>
 
-          <div className={classes.container}>
+          <div id="#aboutus" className={classes.container}>
             <ContactSection />
           </div>
 
@@ -84,7 +85,20 @@ class LandingPage extends React.Component {
             <AboutSection />
           </div>
         </div>
+
         <Footer />
+
+        <Nav 
+          sections={[
+            { label: "Beast Dragon Boat Club", section: "#bdbc" },
+            { label: "Who are we?", section: "#whoarewe" },
+            { label: "Teams", section: "#teams" },
+            { label: "What we do?", section: "#whatwedo" },
+            { label: "Season", section: "#season" },
+            { label: "Pictures", section: "#pictures" },
+            { label: "About us", section: "#aboutus" }
+          ]}
+          />
       </div>
     );
   }
