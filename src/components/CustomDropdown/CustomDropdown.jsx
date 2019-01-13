@@ -19,6 +19,7 @@ import Popper from "@material-ui/core/Popper";
 import Button from "components/CustomButtons/Button.jsx";
 
 import customDropdownStyle from "assets/jss/material-kit-react/components/customDropdownStyle.jsx";
+import { Link } from "react-scroll";
 
 class CustomDropdown extends React.Component {
   constructor(props) {
@@ -155,6 +156,25 @@ class CustomDropdown extends React.Component {
                             onClick={this.handleClose}
                             className={classes.dropdownDividerItem}
                           />
+                        );
+                      }
+                      if (prop.section) {
+                        return (
+                          <Link
+                            key={key}
+                            to={prop.section}
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}>
+                          <MenuItem
+                            key={key}
+                            onClick={this.handleClose}
+                            className={dropdownItem}
+                          >
+                            {prop.label}
+                          </MenuItem>
+                          </Link>
                         );
                       }
                       return (

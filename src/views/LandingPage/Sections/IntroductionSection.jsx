@@ -41,6 +41,7 @@ class IntroductionSection extends React.Component {
             <Button
               target="_blank"
               rel="noopener noreferrer"
+              href="https://www.facebook.com/BeastDragonboatClub"
               color="danger"
               round
             >
