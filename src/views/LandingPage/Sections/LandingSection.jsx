@@ -10,6 +10,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
+import {Link} from "react-scroll";
 import landingStyle from "assets/jss/material-kit-react/views/landingPageSections/landingStyle.jsx";
 
 class LandingSection extends React.Component {
@@ -29,6 +30,14 @@ class LandingSection extends React.Component {
               dui. Sed ut molestie massa.
             </h5>
             <br />
+            <Link
+              className={classes.link}
+              to="#whoarewe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
             <Button
               color="danger"
               target="_blank"
@@ -37,6 +46,7 @@ class LandingSection extends React.Component {
             >
               Learn More
             </Button>
+            </Link>
           </GridItem>
           <GridItem className={classes.gridCalendar} xs={12} sm={12} md={5}>
             <Card className={classes.card}>

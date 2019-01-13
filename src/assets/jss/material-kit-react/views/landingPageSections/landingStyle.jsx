@@ -42,6 +42,12 @@ const landingStyle = {
     fontWeight: "900",
     color: "#585858",
     fontFamily: '"Roboto Slab", "Helvetica", "Arial", sans-serif'
+  },
+  link: {
+    color: "#FFFFFF",
+    "&:hover, &:focus": {
+      color: "#FFFFFF"
+    },
   }
 };
 

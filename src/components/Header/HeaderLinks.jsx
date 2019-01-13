@@ -1,16 +1,11 @@
 /*eslint-disable*/
 import React from "react";
-// react components for routing our app without refresh
-import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
-
-// @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -75,17 +70,19 @@ function HeaderLinks({ ...props }) {
         <CustomDropdown
           left
           hoverColor="danger"
-          buttonIcon="fa fa-list-alt"
+          buttonIcon="fa fa-search"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           dropdownList={[
-            "Who are we?",
-            "Teams",
-            "What we do?",
-            "Season",
-            "About"
+            { label: "Beast Dragon Boat Club", section: "#bdbc" },
+            { label: "Who are we?", section: "#whoarewe" },
+            { label: "Teams", section: "#teams" },
+            { label: "What we do?", section: "#whatwedo" },
+            { label: "Season", section: "#season" },
+            { label: "Pictures", section: "#pictures" },
+            { label: "About us", section: "#aboutus" }
           ]}
         />
       </ListItem> */}
