@@ -16,7 +16,7 @@ const navStyle = {
     "& a": {
       display: "inline-block",
       backfaceVisibility: "hidden",
-      width: "100%",
+      width: "100%"
     },
     "& span": {
       float: "right",
@@ -65,8 +65,7 @@ const navStyle = {
     width: "10px",
     borderRadius: "50%",
     backgroundColor: dangerColor,
-    transition:
-      "transform .2s, background-color .5s, -webkit-transform .2s",
+    transition: "transform .2s, background-color .5s, -webkit-transform .2s",
     transformOrigin: "50% 50%"
   },
   label: {

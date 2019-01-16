@@ -166,14 +166,15 @@ class CustomDropdown extends React.Component {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}>
-                          <MenuItem
-                            key={key}
-                            onClick={this.handleClose}
-                            className={dropdownItem}
+                            duration={500}
                           >
-                            {prop.label}
-                          </MenuItem>
+                            <MenuItem
+                              key={key}
+                              onClick={this.handleClose}
+                              className={dropdownItem}
+                            >
+                              {prop.label}
+                            </MenuItem>
                           </Link>
                         );
                       }

@@ -17,7 +17,7 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.center}>&copy; 2018, Beast Dragonboat Club</div>
+        <div className={classes.center}>&copy; 2019, Beast Dragonboat Club</div>
       </div>
     </footer>
   );

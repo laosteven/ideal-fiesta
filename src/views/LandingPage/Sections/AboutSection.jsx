@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -34,21 +36,37 @@ class AboutSection extends React.Component {
                     urna. Nullam sit amet magna sed ligula bibendum vehicula.
                   </p>
                 </CardBody>
-                <CardFooter className={classes.footer}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                <CardFooter
+                  className={classNames(classes.footer, classes.logoFooter)}
+                >
+                  <Tooltip
+                    id="instagram-tooltip"
+                    title="Follow us on Instagram!"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-instagram"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
+                    <Button
+                      justIcon
+                      color="transparent"
+                      className={classes.margin5}
+                    >
+                      <i className={classes.socials + " fab fa-instagram"} />
+                    </Button>
+                  </Tooltip>
+
+                  <Tooltip
+                    id="instagram-facebook"
+                    title="Follow us on Facebook!"
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <i className={classes.socials + " fab fa-facebook"} />
-                  </Button>
+                    <Button
+                      color="transparent"
+                      href="https://www.facebook.com/BeastDragonboatClub"
+                      target="_blank"
+                      className={classes.margin5}
+                    >
+                      <i className={classes.socials + " fab fa-facebook"} />
+                    </Button>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>
@@ -114,6 +132,7 @@ class AboutSection extends React.Component {
                 <CardFooter className={classes.footerButton}>
                   <Button
                     target="_blank"
+                    href="https://www.facebook.com/BeastDragonboatClub"
                     rel="noopener noreferrer"
                     color="danger"
                     round

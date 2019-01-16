@@ -21,9 +21,12 @@ const aboutStyle = {
   },
   logo: {
     width: "140px",
+    marginTop: "3px",
     paddingBottom: "10px",
-    marginTop: "-7px",
     filter: "brightness(0) invert(1)"
+  },
+  logoFooter: {
+    marginTop: "-10px"
   },
   socials: {
     marginTop: "0",

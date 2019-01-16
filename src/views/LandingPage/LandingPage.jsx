@@ -88,9 +88,9 @@ class LandingPage extends React.Component {
 
         <Footer />
 
-        <Nav 
+        <Nav
           sections={[
-            { label: "Beast Dragon Boat Club", section: "#bdbc" },
+            { label: "Beast Dragonboat Club", section: "#bdbc" },
             { label: "Who are we?", section: "#whoarewe" },
             { label: "Teams", section: "#teams" },
             { label: "What we do?", section: "#whatwedo" },
@@ -98,7 +98,7 @@ class LandingPage extends React.Component {
             { label: "Pictures", section: "#pictures" },
             { label: "About us", section: "#aboutus" }
           ]}
-          />
+        />
       </div>
     );
   }

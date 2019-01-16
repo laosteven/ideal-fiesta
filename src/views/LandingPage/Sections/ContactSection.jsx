@@ -28,6 +28,7 @@ class ContactSection extends React.Component {
               >
                 <Button
                   className={classes.buttonSpacing}
+                  href="https://www.facebook.com/BeastDragonboatClub"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="danger"
@@ -45,6 +46,7 @@ class ContactSection extends React.Component {
               >
                 <Button
                   className={classes.buttonSpacing}
+                  href="mailto:beast.dragonboat.club@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="danger"
@@ -55,6 +57,25 @@ class ContactSection extends React.Component {
                 </Button>
               </Tooltip>
 
+              <Tooltip
+                title="Messenger"
+                placement={"bottom"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  className={classes.buttonSpacing}
+                  href="https://m.me/BeastDragonboatClub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="danger"
+                  round
+                  justIcon
+                >
+                  <i className={"fab fa-facebook-messenger"} />
+                </Button>
+              </Tooltip>
+
+              {/* 
               <Tooltip
                 title="Phone"
                 placement={"bottom"}
@@ -70,7 +91,7 @@ class ContactSection extends React.Component {
                 >
                   <i className={"fa fa-phone"} />
                 </Button>
-              </Tooltip>
+              </Tooltip> */}
             </GridItem>
           </GridContainer>
         </div>

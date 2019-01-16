@@ -17,21 +17,22 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Tooltip
-          title="Register to Beast!"
+          title="Join Beast!"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
+            href="https://www.facebook.com/BeastDragonboatClub"
             target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fa fa-user-plus"} />
           </Button>
         </Tooltip>
-      </ListItem> */}
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -76,7 +77,7 @@ function HeaderLinks({ ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            { label: "Beast Dragon Boat Club", section: "#bdbc" },
+            { label: "Beast Dragonboat Club", section: "#bdbc" },
             { label: "Who are we?", section: "#whoarewe" },
             { label: "Teams", section: "#teams" },
             { label: "What we do?", section: "#whatwedo" },
@@ -96,8 +97,8 @@ function HeaderLinks({ ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            "Join Beast!",
-            { divider: true },
+            // "Join Beast!",
+            // { divider: true },
             "Login",
             { divider: true },
             "English",

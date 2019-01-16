@@ -47,7 +47,7 @@ const landingStyle = {
     color: "#FFFFFF",
     "&:hover, &:focus": {
       color: "#FFFFFF"
-    },
+    }
   }
 };
 

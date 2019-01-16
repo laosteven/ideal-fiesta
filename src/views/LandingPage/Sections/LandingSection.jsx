@@ -10,7 +10,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import landingStyle from "assets/jss/material-kit-react/views/landingPageSections/landingStyle.jsx";
 
 class LandingSection extends React.Component {
@@ -20,7 +20,7 @@ class LandingSection extends React.Component {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={5}>
-            <h1 className={classes.title}>Beast Dragon Boat Club</h1>
+            <h1 className={classes.title}>Beast Dragonboat Club</h1>
             <h5>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               blandit neque dui, id commodo turpis maximus in. Vivamus maximus
@@ -38,14 +38,14 @@ class LandingSection extends React.Component {
               offset={-70}
               duration={500}
             >
-            <Button
-              color="danger"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="lg"
-            >
-              Learn More
-            </Button>
+              <Button
+                color="danger"
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+              >
+                Learn More
+              </Button>
             </Link>
           </GridItem>
           <GridItem className={classes.gridCalendar} xs={12} sm={12} md={5}>

@@ -15,15 +15,15 @@ function Nav({ ...props }) {
         {sections.map((prop, key) => {
           return (
             <li className={classes.li} key={key}>
-            <Link
-              activeClass={classes.active}
-              className={classes.a}
-              to={prop.section}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
+              <Link
+                activeClass={classes.active}
+                className={classes.a}
+                to={prop.section}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 <span className={classes.dot} />
                 <span className={classes.label}>{prop.label}</span>
               </Link>
@@ -42,7 +42,7 @@ Nav.propTypes = {
       label: PropTypes.string,
       section: PropTypes.string
     })
-  ).isRequired,
+  ).isRequired
 };
 
 export default withStyles(navStyle)(Nav);

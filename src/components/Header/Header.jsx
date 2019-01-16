@@ -75,11 +75,7 @@ class Header extends React.Component {
     });
     const brandComponent = (
       <Button className={classes.title}>
-        <img
-          className={classes.logo}
-          alt="Beast Dragon Boat Club"
-          src={brand}
-        />
+        <img className={classes.logo} alt="Beast Dragonboat Club" src={brand} />
       </Button>
     );
     return (
