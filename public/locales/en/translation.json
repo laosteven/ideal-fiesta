@@ -1,0 +1,152 @@
+{
+  "title": "Beast Dragonboat Club",
+  "header": {
+    "join": "Join Beast!",
+    "facebook": "Follow us on Facebook!",
+    "instagram": "Follow us on Instagram!",
+    "login": "Login"
+  },
+  "landing": {
+    "description": "Welcome to Beast!",
+    "calendar": "Competition days",
+    "learn": "Learn more",
+    "event": {
+      "1": "Toronto Festival",
+      "2": "Montreal Challenge",
+      "3": "TBD"
+    }
+  },
+  "introduction": {
+    "title": "Who are we?",
+    "paragraph": {
+      "1": "Paragraph 1",
+      "2": "Paragraph 2"
+    },
+    "join": "Join Beast!"
+  },
+  "teams": {
+    "title": "Teams",
+    "description": "Team description",
+    "fyujon": {
+      "name": "Fyūjon",
+      "description": "Description"
+    },
+    "raging": {
+      "name": "Raging",
+      "description": "Description"
+    },
+    "titans": {
+      "name": "Titans",
+      "description": "Description"
+    }
+  },
+  "objective": {
+    "title": "What we do?",
+    "description": "Description",
+    "dragonboat": {
+      "title": "Dragonboat",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    },
+    "teambuilding": {
+      "title": "Team Building",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    },
+    "outdoor": {
+      "title": "Outdoor activities",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    }
+  },
+  "season": {
+    "title": "What we do?",
+    "description": "Description",
+    "schedule": {
+      "title": "Schedule",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    },
+    "practices": {
+      "title": "Practices",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    },
+    "competitions": {
+      "title": "Competitions",
+      "paragraph": {
+        "1": "Description",
+        "2": "Description"
+      }
+    }
+  },
+  "carousel": {
+    "title": "Pictures",
+    "description": "Description",
+    "image": {
+      "1": {
+        "description": "Description"
+      },
+      "2": {
+        "description": "Description"
+      }
+    },
+    "information": {
+      "title": "Title",
+      "description": "Description"
+    }
+  },
+  "contact": {
+    "title": "Question? Contact us!",
+    "tooltip": {
+      "facebook": "Facebook",
+      "email": "Email",
+      "messenger": "Messenger"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "beast": {
+      "description": "description"
+    },
+    "training": {
+      "title": "Training",
+      "description": "description",
+      "tooltip": {
+        "homepage": "Homepage",
+        "location": "Google Maps"
+      }
+    },
+    "join": {
+      "title": "Join us!",
+      "description": "description",
+      "button": "Join Beast!"
+    }
+  },
+  "calendar": {
+    "month": {
+      "jan": "jan",
+      "feb": "feb",
+      "mar": "mar",
+      "apr": "apr",
+      "may": "may",
+      "jun": "jun",
+      "jul": "jul",
+      "aug": "aug",
+      "sep": "sep",
+      "oct": "oct",
+      "nov": "nov",
+      "dec": "dec"
+    }
+  }
+}

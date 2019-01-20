@@ -1,6 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+import { withNamespaces } from "react-i18next";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -20,7 +21,7 @@ import Logo from "assets/img/beast-logo.png";
 
 class AboutSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -30,10 +31,7 @@ class AboutSection extends React.Component {
                 <CardBody>
                   <img className={classes.logo} src={Logo} alt="logo" />
                   <p className={classes.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    blandit neque dui, id commodo turpis maximus in. Vivamus
-                    maximus ligula a rhoncus pellentesque. Etiam nec ultricies
-                    urna. Nullam sit amet magna sed ligula bibendum vehicula.
+                    {t("about.beast.description")}
                   </p>
                 </CardBody>
                 <CardFooter
@@ -41,7 +39,7 @@ class AboutSection extends React.Component {
                 >
                   <Tooltip
                     id="instagram-tooltip"
-                    title="Follow us on Instagram!"
+                    title={t("header.instagram")}
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
@@ -55,7 +53,7 @@ class AboutSection extends React.Component {
 
                   <Tooltip
                     id="instagram-facebook"
-                    title="Follow us on Facebook!"
+                    title={t("header.facebook")}
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
@@ -74,18 +72,15 @@ class AboutSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <CardBody>
-                  <h3 className={classes.title}>Training</h3>
+                  <h3 className={classes.title}>{t("about.training.title")}</h3>
                   <p className={classes.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    blandit neque dui, id commodo turpis maximus in. Vivamus
-                    maximus ligula a rhoncus pellentesque. Etiam nec ultricies
-                    urna. Nullam sit amet magna sed ligula bibendum vehicula.
+                    {t("about.training.description")}
                   </p>
                 </CardBody>
 
                 <CardFooter className={classes.footer}>
                   <Tooltip
-                    title="Website"
+                    title={t("about.training.tooltip.homepage")}
                     placement={"bottom"}
                     classes={{ tooltip: classes.tooltip }}
                   >
@@ -99,7 +94,7 @@ class AboutSection extends React.Component {
                   </Tooltip>
 
                   <Tooltip
-                    title="Google Maps"
+                    title={t("about.training.tooltip.location")}
                     placement={"bottom"}
                     classes={{ tooltip: classes.tooltip }}
                   >
@@ -120,12 +115,9 @@ class AboutSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <CardBody>
-                  <h3 className={classes.title}>Join Us!</h3>
+                  <h3 className={classes.title}>{t("about.join.title")}</h3>
                   <p className={classes.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    blandit neque dui, id commodo turpis maximus in. Vivamus
-                    maximus ligula a rhoncus pellentesque. Etiam nec ultricies
-                    urna. Nullam sit amet magna sed ligula bibendum vehicula.
+                    {t("about.join.description")}
                   </p>
                 </CardBody>
 
@@ -137,7 +129,7 @@ class AboutSection extends React.Component {
                     color="danger"
                     round
                   >
-                    JOIN BEAST!
+                    {t("about.join.button")}
                     <i className={classes.userSpacing + " fa fa-user-plus"} />
                   </Button>
                 </CardFooter>
@@ -150,4 +142,6 @@ class AboutSection extends React.Component {
   }
 }
 
-export default withStyles(aboutStyle)(AboutSection);
+export default withNamespaces("translation")(
+  withStyles(aboutStyle)(AboutSection)
+);

@@ -2,6 +2,7 @@ import React from "react";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 
 // @material-ui/icons
 import InsertInvitation from "@material-ui/icons/InsertInvitation";
@@ -17,16 +18,16 @@ import seasonStyle from "assets/jss/material-kit-react/views/landingPageSections
 
 class SeasonSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         <div className={classes.container}>
           <div id="navigation-pills">
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8}>
-                <h2 className={classes.title}>Season</h2>
+                <h2 className={classes.title}>{t("season.title")}</h2>
                 <h5 className={classes.description}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {t("season.description")}
                 </h5>
                 <hr className={classes.hsep} />
               </GridItem>
@@ -37,107 +38,35 @@ class SeasonSection extends React.Component {
                   color="danger"
                   tabs={[
                     {
-                      tabButton: "Schedule",
+                      tabButton: t("season.schedule.title"),
                       tabIcon: InsertInvitation,
                       tabContent: (
                         <span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam sed nisi dui. Integer finibus efficitur
-                            sapien vitae lobortis. Curabitur hendrerit sapien
-                            vel ipsum convallis, in tempor sem porttitor. Aenean
-                            ornare lobortis magna, ut blandit nulla congue a.
-                            Sed hendrerit, purus a consequat cursus, tellus dui
-                            euismod neque, eget sagittis diam elit in nisi.
-                            Donec vel arcu ut sem ullamcorper scelerisque.
-                            Pellentesque neque risus, vestibulum eu commodo in,
-                            posuere sed quam. Morbi rhoncus velit sit amet velit
-                            tempus, quis vehicula libero suscipit. Sed tellus
-                            diam, malesuada a tellus in, feugiat varius nulla.
-                            Quisque elementum malesuada quam non tempus. Ut
-                            consectetur rutrum iaculis. Vestibulum velit urna,
-                            tempus vel sagittis vel, finibus at nulla. Cras
-                            interdum nisl non mattis dapibus. Aenean sed augue
-                            sollicitudin, molestie sapien ut, mollis magna.
-                            Aliquam cursus sem nulla, eget viverra mi sagittis
-                            at. Duis mollis mi eget fermentum venenatis.
-                          </p>
+                          <p>{t("season.schedule.paragraph.1")}</p>
                           <br />
-                          <p>
-                            Praesent facilisis enim at posuere dignissim.
-                            Phasellus ut metus eget leo consequat rutrum sed non
-                            justo. Aliquam erat volutpat. Vivamus eget tortor
-                            justo. Quisque mi nibh, consectetur nec mauris id,
-                            eleifend gravida orci. Nullam faucibus nulla ut
-                            neque accumsan, ac elementum ex pretium. Praesent
-                            cursus justo a vulputate accumsan. Orci varius
-                            natoque penatibus et magnis dis parturient montes,
-                            nascetur ridiculus mus.
-                          </p>
+                          <p>{t("season.schedule.paragraph.2")}</p>
                         </span>
                       )
                     },
                     {
-                      tabButton: "Practices",
+                      tabButton: t("season.practices.title"),
                       tabIcon: Schedule,
                       tabContent: (
                         <span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam sed nisi dui. Integer finibus efficitur
-                            sapien vitae lobortis. Curabitur hendrerit sapien
-                            vel ipsum convallis, in tempor sem porttitor. Aenean
-                            ornare lobortis magna, ut blandit nulla congue a.
-                            Sed hendrerit, purus a consequat cursus, tellus dui
-                            euismod neque, eget sagittis diam elit in nisi.
-                            Donec vel arcu ut sem ullamcorper scelerisque.
-                            Pellentesque neque risus, vestibulum eu commodo in,
-                            posuere sed quam.
-                          </p>
+                          <p>{t("season.practices.paragraph.1")}</p>
                           <br />
-                          <p>
-                            Morbi rhoncus velit sit amet velit tempus, quis
-                            vehicula libero suscipit. Sed tellus diam, malesuada
-                            a tellus in, feugiat varius nulla. Quisque elementum
-                            malesuada quam non tempus. Ut consectetur rutrum
-                            iaculis. Vestibulum velit urna, tempus vel sagittis
-                            vel, finibus at nulla. Cras interdum nisl non mattis
-                            dapibus. Aenean sed augue sollicitudin, molestie
-                            sapien ut, mollis magna. Aliquam cursus sem nulla,
-                            eget viverra mi sagittis at. Duis mollis mi eget
-                            fermentum venenatis.
-                          </p>
+                          <p>{t("season.practices.paragraph.2")}</p>
                         </span>
                       )
                     },
                     {
-                      tabButton: "Lorem",
+                      tabButton: t("season.competitions.title"),
                       tabIcon: Healing,
                       tabContent: (
                         <span>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam sed nisi dui. Integer finibus efficitur
-                            sapien vitae lobortis. Curabitur hendrerit sapien
-                            vel ipsum convallis, in tempor sem porttitor. Aenean
-                            ornare lobortis magna, ut blandit nulla congue a.
-                            Sed hendrerit, purus a consequat cursus, tellus dui
-                            euismod neque, eget sagittis diam elit in nisi.
-                            Donec vel arcu ut sem ullamcorper scelerisque.
-                            Pellentesque neque risus, vestibulum eu commodo in,
-                            posuere sed quam.
-                          </p>
+                          <p>{t("season.competitions.paragraph.1")}</p>
                           <br />
-                          <p>
-                            Morbi rhoncus velit sit amet velit tempus, quis
-                            vehicula libero suscipit. Sed tellus diam, malesuada
-                            a tellus in, feugiat varius nulla. Quisque elementum
-                            malesuada quam non tempus. Ut consectetur rutrum
-                            iaculis. Vestibulum velit urna, tempus vel sagittis
-                            vel, finibus at nulla. Cras interdum nisl non mattis
-                            dapibus. Aenean sed augue sollicitudin, molestie
-                            sapien ut, mollis magna.
-                          </p>
+                          <p>{t("season.competitions.paragraph.2")}</p>
                         </span>
                       )
                     }
@@ -152,4 +81,6 @@ class SeasonSection extends React.Component {
   }
 }
 
-export default withStyles(seasonStyle)(SeasonSection);
+export default withNamespaces("translation")(
+  withStyles(seasonStyle)(SeasonSection)
+);

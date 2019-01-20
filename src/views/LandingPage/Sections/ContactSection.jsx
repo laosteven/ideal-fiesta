@@ -1,6 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 
@@ -13,16 +14,16 @@ import contactStyle from "assets/jss/material-kit-react/views/landingPageSection
 
 class ContactSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
-              <h2>Questions? Contact us!</h2>
+              <h2>{t("contact.title")}</h2>
 
               <Tooltip
-                title="Facebook"
+                title={t("contact.tooltip.facebook")}
                 placement={"bottom"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -40,7 +41,7 @@ class ContactSection extends React.Component {
               </Tooltip>
 
               <Tooltip
-                title="Email"
+                title={t("contact.tooltip.email")}
                 placement={"bottom"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -58,7 +59,7 @@ class ContactSection extends React.Component {
               </Tooltip>
 
               <Tooltip
-                title="Messenger"
+                title={t("contact.tooltip.messenger")}
                 placement={"bottom"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -100,4 +101,6 @@ class ContactSection extends React.Component {
   }
 }
 
-export default withStyles(contactStyle)(ContactSection);
+export default withNamespaces("translation")(
+  withStyles(contactStyle)(ContactSection)
+);

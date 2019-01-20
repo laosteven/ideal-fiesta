@@ -21,7 +21,8 @@ const teamsStyle = {
   },
   cardTitle: {
     ...cardTitle,
-    color: "#fff"
+    color: "#fff",
+    textTransform: "uppercase"
   },
   description: {
     color: "#fff"

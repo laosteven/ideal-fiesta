@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 
 // @material-ui/icons
 
@@ -30,7 +31,8 @@ const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, t, ...rest } = this.props;
+
     return (
       <div>
         <Header
@@ -40,7 +42,7 @@ class LandingPage extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 400,
+            height: 20,
             color: "danger"
           }}
           {...rest}
@@ -90,13 +92,13 @@ class LandingPage extends React.Component {
 
         <Nav
           sections={[
-            { label: "Beast Dragonboat Club", section: "#bdbc" },
-            { label: "Who are we?", section: "#whoarewe" },
-            { label: "Teams", section: "#teams" },
-            { label: "What we do?", section: "#whatwedo" },
-            { label: "Season", section: "#season" },
-            { label: "Pictures", section: "#pictures" },
-            { label: "About us", section: "#aboutus" }
+            { label: t("title"), section: "#bdbc" },
+            { label: t("introduction.title"), section: "#whoarewe" },
+            { label: t("teams.title"), section: "#teams" },
+            { label: t("objective.title"), section: "#whatwedo" },
+            { label: t("season.title"), section: "#season" },
+            { label: t("carousel.title"), section: "#pictures" },
+            { label: t("about.title"), section: "#aboutus" }
           ]}
         />
       </div>
@@ -104,4 +106,6 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withNamespaces("translation")(
+  withStyles(landingPageStyle)(LandingPage)
+);

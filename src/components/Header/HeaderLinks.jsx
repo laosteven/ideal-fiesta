@@ -3,6 +3,8 @@ import React from "react";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import i18n from "i18next";
+import { withNamespaces } from "react-i18next";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -13,13 +15,19 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
-function HeaderLinks({ ...props }) {
+function HeaderLinks({ t, ...props }) {
   const { classes } = props;
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+    document.title = i18n.t("title");
+  };
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Tooltip
-          title="Join Beast!"
+          title={t("header.join")}
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -36,7 +44,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on Facebook!"
+          title={t("header.facebook")}
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -53,7 +61,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on Instagram!"
+          title={t("header.instagram")}
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -89,7 +97,7 @@ function HeaderLinks({ ...props }) {
       </ListItem> */}
       <ListItem className={classes.listItem}>
         <CustomDropdown
-          left
+          noLiPadding
           hoverColor="danger"
           buttonIcon="fa fa-cog"
           buttonProps={{
@@ -97,12 +105,26 @@ function HeaderLinks({ ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            // "Join Beast!",
-            // { divider: true },
-            "Login",
+            <a href="#" color="transparent" className={classes.dropdownLink}>
+              {t("header.login")}
+            </a>,
             { divider: true },
-            "English",
-            "Français"
+            <a
+              onClick={() => changeLanguage("en")}
+              color="transparent"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              English
+            </a>,
+            <a
+              onClick={() => changeLanguage("fr")}
+              color="transparent"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Français
+            </a>
           ]}
         />
       </ListItem>
@@ -110,4 +132,6 @@ function HeaderLinks({ ...props }) {
   );
 }
 
-export default withStyles(headerLinksStyle)(HeaderLinks);
+export default withNamespaces("translation")(
+  withStyles(headerLinksStyle)(HeaderLinks)
+);

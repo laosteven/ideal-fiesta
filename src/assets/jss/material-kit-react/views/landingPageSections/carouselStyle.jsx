@@ -28,6 +28,9 @@ const carouselStyle = {
   marginAuto: {
     marginLeft: "auto !important",
     marginRight: "auto !important"
+  },
+  slickIcons: {
+    marginRight: "5px"
   }
 };
 
