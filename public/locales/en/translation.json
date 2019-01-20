@@ -133,6 +133,13 @@
       "button": "Join Beast!"
     }
   },
+  "login": {
+    "title": "Login",
+    "status": "Under construction",
+    "button": {
+      "back": "Go back"
+    }
+  },
   "calendar": {
     "month": {
       "jan": "jan",

@@ -1,5 +1,6 @@
 import { defaultFont } from "assets/jss/material-kit-react.jsx";
 
+import modalStyle from "assets/jss/material-kit-react/modalStyle.jsx";
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx";
 
 const headerLinksStyle = theme => ({
@@ -111,7 +112,8 @@ const headerLinksStyle = theme => ({
   ...tooltip,
   marginRight5: {
     marginRight: "5px"
-  }
+  },
+  ...modalStyle
 });
 
 export default headerLinksStyle;

@@ -1,10 +1,11 @@
 /*eslint-disable*/
 import React from "react";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import i18n from "i18next";
 import { withNamespaces } from "react-i18next";
+import { Link } from "react-router-dom";
+
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -105,26 +106,31 @@ function HeaderLinks({ t, ...props }) {
             color: "transparent"
           }}
           dropdownList={[
-            <a href="#" color="transparent" className={classes.dropdownLink}>
-              {t("header.login")}
-            </a>,
+            <Link to="login" className={classes.dropdownLink}>
+              Login
+            </Link>,
             { divider: true },
-            <a
-              onClick={() => changeLanguage("en")}
-              color="transparent"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              English
-            </a>,
-            <a
-              onClick={() => changeLanguage("fr")}
-              color="transparent"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Français
-            </a>
+            <div>
+              {i18n.language == "fr" ? (
+                <a
+                  onClick={() => changeLanguage("en")}
+                  color="transparent"
+                  target="_blank"
+                  className={classes.dropdownLink}
+                >
+                  English
+                </a>
+              ) : (
+                  <a
+                  onClick={() => changeLanguage("fr")}
+                  color="transparent"
+                  target="_blank"
+                  className={classes.dropdownLink}
+                >
+                    Français
+                </a>
+              )}
+            </div>
           ]}
         />
       </ListItem>
