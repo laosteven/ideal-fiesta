@@ -1,6 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 // @material-ui/icons
 
 // core components
@@ -13,7 +14,7 @@ import United from "assets/img/United.png";
 
 class IntroductionSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer>
@@ -21,31 +22,25 @@ class IntroductionSection extends React.Component {
             <img className={classes.united} src={United} alt="United Beast" />
           </GridItem>
           <GridItem xs={12} sm={12} md={7}>
-            <h2 className={classes.title}>Who are we?</h2>
+            <h2 className={classes.title}>{t("introduction.title")}</h2>
             <p className={classes.justify}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              blandit neque dui, id commodo turpis maximus in. Vivamus maximus
-              ligula a rhoncus pellentesque. Etiam nec ultricies urna. Nullam
-              sit amet magna sed ligula bibendum vehicula. Mauris eu elit ante.
-              Integer elit magna, pharetra in nisl vitae, efficitur efficitur
-              dui.
+              {t("introduction.paragraph.1")}
               <br />
               <br />
-              Sed ut molestie massa. In eu tortor id ex rutrum mattis. Ut congue
-              tincidunt nisi, eget vehicula justo luctus quis. Aenean eleifend
-              ipsum vel vulputate elementum. Vestibulum et enim at sapien
-              ullamcorper ultricies eget at sapien. Mauris quis fermentum
-              ligula. Phasellus ut orci et velit pellentesque consectetur.
+              {t("introduction.paragraph.2")}
+              <br />
+              <br />
+              {t("introduction.paragraph.3")}
             </p>
 
             <Button
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/BeastDragonboatClub"
+              href="https://goo.gl/forms/c5IfFmw6StvCzap13"
               color="danger"
               round
             >
-              JOIN BEAST!
+              {t("introduction.join")}
               <i className={classes.userSpacing + " fa fa-user-plus"} />
             </Button>
           </GridItem>
@@ -55,4 +50,6 @@ class IntroductionSection extends React.Component {
   }
 }
 
-export default withStyles(introductionStyle)(IntroductionSection);
+export default withNamespaces("translation")(
+  withStyles(introductionStyle)(IntroductionSection)
+);

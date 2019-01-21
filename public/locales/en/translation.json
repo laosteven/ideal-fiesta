@@ -1,0 +1,169 @@
+{
+  "title": "Beast Dragonboat Club",
+  "header": {
+    "join": "Join Beast!",
+    "facebook": "Follow us on Facebook!",
+    "instagram": "Follow us on Instagram!",
+    "login": "Login"
+  },
+  "landing": {
+    "description": {
+      "1": "Beginner or advanced, new or old, there is always a perfect place for you on the boat.",
+      "2": "Join us this summer and start your dragon boat adventure!"
+    },
+    "calendar": "Competition days",
+    "learn": "Learn more",
+    "event": {
+      "1": "Toronto Festival",
+      "2": "Montreal Challenge",
+      "3": "TBD"
+    }
+  },
+  "introduction": {
+    "title": "Who are we?",
+    "paragraph": {
+      "1": "BEAST Dragon Boat Club was born in 2011 in Montreal with the merging of Anglerfish BEAST! and Let’s Sink Together 4.",
+      "2": "Since then, many of the founding members of BEAST still remain, along with newer members, many of whom are friends and family. Needless to say, BEAST is considered an extended family by many of us.",
+      "3": "Additionally, BEAST contains several teams to cater to different levels of competitiveness. From community tier to sports tier, we do it all!"
+    },
+    "join": "Join Beast!"
+  },
+  "teams": {
+    "title": "Community Teams",
+    "description": "Our teams. Our family. Through the journey, we stand United.",
+    "fyujon": {
+      "name": "Fyūjon",
+      "description": "Formed in 2016 by the fusion of two veteran community teams of Beast: Autoboats (2010) and Mortal Komboats (2011)."
+    },
+    "raging": {
+      "name": "Raging",
+      "description": "Born in 2010, founders of Beast Dragon Boat Club. Originated from members of Let’s Sink Together 4 and Anglerfish."
+    },
+    "titans": {
+      "name": "Titans",
+      "description": "Previously named Spartans (2014), the Titans team came to existence in 2018. A new young team full of potential and promises."
+    }
+  },
+  "objective": {
+    "title": "What we do?",
+    "description": "The various activities we do during the season as a team.",
+    "dragonboat": {
+      "title": "Dragonboat",
+      "paragraph": {
+        "1": "Dragon Boat is a sport composed of at least 22 people that paddle together on a boat towards a mutual objective. While balancing fun and competitiveness, the goal of each paddler is to push themselves at their hardest to race to the finish line.",
+        "2": "BEAST's main goal has always been to offer the best Dragon Boat experience for all our members. Aside from the main coach for each team, we have many experienced paddlers who are always ready to give a hand and provide peer coaching. "
+      }
+    },
+    "teambuilding": {
+      "title": "Team Building",
+      "paragraph": {
+        "1": "Dragon Boat is the perfect sport for team building. In fact, in order for a team to excel, this sport requires a tremendous amount of teamwork, trust and leadership from each member.",
+        "2": "The teams of BEAST are about building a strong friendship and learning dragon boat as a summer activity. A season includes practices that will prepare each paddler for upcoming competitions. Even though winning is important, the main goal of a team is to let each and every paddler grow within their respective teams and appreciate each other’s hard work."
+      }
+    },
+    "outdoor": {
+      "title": "Outdoor activities",
+      "paragraph": {
+        "1": "While dragon boat itself provides a lot of team building, BEAST also strive to allow members to build a long-lasting friendship and memories.",
+        "2": "In addition the sport, several other team activities are organised during the season. From various athletic activities such as archery tag or canoeing to small hangouts like barbecues or book sales, there will be no dull moment with BEAST."
+      }
+    }
+  },
+  "season": {
+    "title": "Season",
+    "description": "Everything you need to know for an enjoyable dragon boat experience.",
+    "practices": {
+      "title": "Practices",
+      "paragraph": {
+        "1": "When?",
+        "2": "Between the month of May to August.",
+        "3": "Weekdays in the evening from 6 pm to 9 pm.",
+        "4": "Happens twice per week.",
+        "5": "Where? ",
+        "6": "Olympic Basin",
+        "7": "Located at Parc Jean-Drapeau. It takes about 10 to 15 minutes of walking to reach the Athlete’s Quarter.",
+        "8": "Lachine Canal",
+        "9": "During F1 Grand Prix week, two or three practices will happen at Canal Lachine instead of the Olympic Basin",
+        "10": "The length of the season will depend on the number of competitions that the Club will have chosen for the year if enough paddlers manifest their interest for a specific event."
+      }
+    },
+    "competitions": {
+      "title": "Competitions",
+      "paragraph": {
+        "1": "The competitions we usually participate are:",
+        "2": "Toronto International Dragon Boat Race Festival (TIDBRF)",
+        "3": "Most of our bonding moment happen during this trip and always end with a very positive experience between paddlers.",
+        "4": "A whole weekend will be spent in Toronto at the University of Toronto New College Residences.",
+        "5": "MTL Challenge",
+        "6": "This competition hosts the action-intensive race format of 2k, ultimately testing our paddling and steering skills.",
+        "7": "Also happening during the weekend, each team will prepare healthy meals for the competition. Cooking experts, it is your time to shine!"
+      }
+    }
+  },
+  "carousel": {
+    "title": "Pictures",
+    "description": "See us in action during our most intense moments!",
+    "image": {
+      "1": {
+        "description": "Description"
+      },
+      "2": {
+        "description": "Description"
+      }
+    },
+    "information": {
+      "title": "How dragon boat works",
+      "description": "Dragon boat races are defined by a set amount of distance that each team will have to paddle at the same time in order to reach the finish line. A race format is usually defined by its distance: it varies from a short distance (200m), an official distance (500m) or a 2K (2km). For one boat, there are 20 paddlers: 10 for each side, and one steerer at the back."
+    }
+  },
+  "contact": {
+    "title": "Question? Contact us!",
+    "tooltip": {
+      "facebook": "Facebook",
+      "email": "Email",
+      "messenger": "Messenger"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "beast": {
+      "description": "Founded on 2010, Beast Dragon Boat Club is an Amateur Sports Team based in Montreal, Quebec. Made of three different teams of around 22 paddlers who each collaborate, manage and train with each other. "
+    },
+    "training": {
+      "title": "Training",
+      "description": "Beast training activities mainly take place at the Olympic Basin of Parc Jean-Drapeau, located east of downtown Montreal, Quebec in Canada. It takes about 10 to 15 minutes of walking to reach the Athlete's quarter.",
+      "tooltip": {
+        "homepage": "Homepage",
+        "location": "Google Maps"
+      }
+    },
+    "join": {
+      "title": "Join us!",
+      "description": "Start the season right and join us for a life-changing adventure with dragon boat! Looking for a new challenge? You’ve come to the right place. The Beast Club welcomes you with open arms.",
+      "button": "Join Beast!"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "status": "Coming Soon!",
+    "button": {
+      "back": "Go back"
+    }
+  },
+  "calendar": {
+    "month": {
+      "jan": "jan",
+      "feb": "feb",
+      "mar": "mar",
+      "apr": "apr",
+      "may": "may",
+      "jun": "jun",
+      "jul": "jul",
+      "aug": "aug",
+      "sep": "sep",
+      "oct": "oct",
+      "nov": "nov",
+      "dec": "dec"
+    }
+  }
+}

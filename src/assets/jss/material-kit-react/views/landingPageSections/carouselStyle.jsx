@@ -2,7 +2,7 @@ import { cardTitle, container, title } from "assets/jss/material-kit-react.jsx";
 
 const carouselStyle = {
   section: {
-    padding: "120px 0 140px 0",
+    padding: "100px 0 180px 0",
     textAlign: "center"
   },
   container,
@@ -11,11 +11,10 @@ const carouselStyle = {
     color: "#fff"
   },
   description: {
-    color: "#fff"
-  },
-  hsep: {
-    width: "50px",
-    margin: "25px auto"
+    color: "#fff",
+    textAlign: "justify",
+    textAlignLast: "center",
+    marginBottom: "50px"
   },
   title: {
     ...title,
@@ -28,6 +27,9 @@ const carouselStyle = {
   marginAuto: {
     marginLeft: "auto !important",
     marginRight: "auto !important"
+  },
+  slickIcons: {
+    marginRight: "5px"
   }
 };
 

@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 // @material-ui/icons
 
 // core components
@@ -17,16 +18,15 @@ import Outdoor from "assets/img/outdoor.jpg";
 
 class ObjectiveSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>What we do?</h2>
+            <h2 className={classes.title}>{t("objective.title")}</h2>
             <h5 className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              {t("objective.description")}
             </h5>
-            <hr className={classes.hsep} />
           </GridItem>
         </GridContainer>
 
@@ -40,23 +40,13 @@ class ObjectiveSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={7}>
               <h4 className={classes.subTitle}>
-                <b>Lorem Ipsum</b>
+                <b>{t("objective.dragonboat.title")}</b>
               </h4>
               <p className={classes.justify}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                blandit neque dui, id commodo turpis maximus in. Vivamus maximus
-                ligula a rhoncus pellentesque. Etiam nec ultricies urna. Nullam
-                sit amet magna sed ligula bibendum vehicula. Mauris eu elit
-                ante. Integer elit magna, pharetra in nisl vitae, efficitur
-                efficitur dui.
+                {t("objective.dragonboat.paragraph.1")}
                 <br />
                 <br />
-                Sed ut molestie massa. In eu tortor id ex rutrum mattis. Ut
-                congue tincidunt nisi, eget vehicula justo luctus quis. Aenean
-                eleifend ipsum vel vulputate elementum. Vestibulum et enim at
-                sapien ullamcorper ultricies eget at sapien. Mauris quis
-                fermentum ligula. Phasellus ut orci et velit pellentesque
-                consectetur.
+                {t("objective.dragonboat.paragraph.2")}
               </p>
             </GridItem>
           </GridContainer>
@@ -72,23 +62,13 @@ class ObjectiveSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={7}>
               <h4 className={classes.subTitle}>
-                <b>Lorem Ipsum</b>
+                <b>{t("objective.teambuilding.title")}</b>
               </h4>
               <p className={classes.justify}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                blandit neque dui, id commodo turpis maximus in. Vivamus maximus
-                ligula a rhoncus pellentesque. Etiam nec ultricies urna. Nullam
-                sit amet magna sed ligula bibendum vehicula. Mauris eu elit
-                ante. Integer elit magna, pharetra in nisl vitae, efficitur
-                efficitur dui.
+                {t("objective.teambuilding.paragraph.1")}
                 <br />
                 <br />
-                Sed ut molestie massa. In eu tortor id ex rutrum mattis. Ut
-                congue tincidunt nisi, eget vehicula justo luctus quis. Aenean
-                eleifend ipsum vel vulputate elementum. Vestibulum et enim at
-                sapien ullamcorper ultricies eget at sapien. Mauris quis
-                fermentum ligula. Phasellus ut orci et velit pellentesque
-                consectetur.
+                {t("objective.teambuilding.paragraph.2")}
               </p>
             </GridItem>
           </GridContainer>
@@ -104,23 +84,13 @@ class ObjectiveSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={7}>
               <h4 className={classes.subTitle}>
-                <b>Lorem Ipsum</b>
+                <b>{t("objective.outdoor.title")}</b>
               </h4>
               <p className={classes.justify}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                blandit neque dui, id commodo turpis maximus in. Vivamus maximus
-                ligula a rhoncus pellentesque. Etiam nec ultricies urna. Nullam
-                sit amet magna sed ligula bibendum vehicula. Mauris eu elit
-                ante. Integer elit magna, pharetra in nisl vitae, efficitur
-                efficitur dui.
+                {t("objective.outdoor.paragraph.1")}
                 <br />
                 <br />
-                Sed ut molestie massa. In eu tortor id ex rutrum mattis. Ut
-                congue tincidunt nisi, eget vehicula justo luctus quis. Aenean
-                eleifend ipsum vel vulputate elementum. Vestibulum et enim at
-                sapien ullamcorper ultricies eget at sapien. Mauris quis
-                fermentum ligula. Phasellus ut orci et velit pellentesque
-                consectetur.
+                {t("objective.outdoor.paragraph.2")}
               </p>
             </GridItem>
           </GridContainer>
@@ -130,4 +100,6 @@ class ObjectiveSection extends React.Component {
   }
 }
 
-export default withStyles(objectiveStyle)(ObjectiveSection);
+export default withNamespaces("translation")(
+  withStyles(objectiveStyle)(ObjectiveSection)
+);

@@ -2,7 +2,7 @@ import { title } from "assets/jss/material-kit-react.jsx";
 
 const introductionStyle = {
   section: {
-    padding: "100px 0 150px 0",
+    padding: "100px 0 140px 0",
     color: "#000"
   },
   title: {

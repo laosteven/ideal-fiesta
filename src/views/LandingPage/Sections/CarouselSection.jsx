@@ -3,8 +3,9 @@ import React from "react";
 import Carousel from "react-slick";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import { withNamespaces } from "react-i18next";
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+import Info from "@material-ui/icons/Info";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -16,7 +17,7 @@ import image3 from "assets/img/teams.jpg";
 
 class CarouselSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     const settings = {
       dots: true,
       infinite: true,
@@ -29,11 +30,8 @@ class CarouselSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Pictures</h2>
-            <h5 className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h5>
-            <hr className={classes.hsep} />
+            <h2 className={classes.title}>{t("carousel.title")}</h2>
+            <h5 className={classes.description}>{t("carousel.description")}</h5>
           </GridItem>
         </GridContainer>
         <div className={classes.container}>
@@ -49,8 +47,8 @@ class CarouselSection extends React.Component {
                     />
                     <div className="slick-caption">
                       <h4>
-                        <LocationOn className="slick-icons" />
-                        Somewhere Beyond, United States
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.1.description")}
                       </h4>
                     </div>
                   </div>
@@ -62,8 +60,8 @@ class CarouselSection extends React.Component {
                     />
                     <div className="slick-caption">
                       <h4>
-                        <LocationOn className="slick-icons" />
-                        Yellowstone National Park, United States
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.2.description")}
                       </h4>
                     </div>
                   </div>
@@ -71,17 +69,14 @@ class CarouselSection extends React.Component {
               </Card>
             </GridItem>
 
-            <GridItem xs={12} sm={12} md={6}>
-              <h4 className={classes.cardTitle}>Lorem Ipsum</h4>
+            {/* <GridItem xs={12} sm={12} md={6}>
+              <h4 className={classes.cardTitle}>
+                {t("carousel.information.title")}
+              </h4>
               <p className={classes.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                sed nisi dui. Integer finibus efficitur sapien vitae lobortis.
-                Curabitur hendrerit sapien vel ipsum convallis, in tempor sem
-                porttitor. Aenean ornare lobortis magna, ut blandit nulla congue
-                a. Sed hendrerit, purus a consequat cursus, tellus dui euismod
-                neque, eget sagittis diam elit in nisi.
+                {t("carousel.information.description")}
               </p>
-            </GridItem>
+            </GridItem> */}
           </GridContainer>
         </div>
       </div>
@@ -89,4 +84,6 @@ class CarouselSection extends React.Component {
   }
 }
 
-export default withStyles(carouselStyle)(CarouselSection);
+export default withNamespaces("translation")(
+  withStyles(carouselStyle)(CarouselSection)
+);

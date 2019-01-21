@@ -147,7 +147,20 @@ const headerStyle = {
     paddingRight: "0px",
     paddingLeft: "0",
     ...transition
-  }
+  },
+  navLink: {
+    color: "inherit",
+    position: "relative",
+    textTransform: "uppercase",
+    borderRadius: "3px",
+    textDecoration: "none",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover": {
+      color: "inherit",
+      background: "rgba(200, 200, 200, 0.2)"
+    }
+  },
 };
 
 export default headerStyle;

@@ -17,6 +17,9 @@ const objectiveStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+  description: {
+    marginBottom: "50px"
+  },
   justify: {
     textAlign: "justify"
   },

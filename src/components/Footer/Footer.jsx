@@ -5,10 +5,11 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core";
+import { withNamespaces } from "react-i18next";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
-function Footer({ ...props }) {
+function Footer({ t, ...props }) {
   const { classes, whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
@@ -17,7 +18,7 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.center}>&copy; 2019, Beast Dragonboat Club</div>
+        <div className={classes.center}>&copy; 2019, {t("title")}</div>
       </div>
     </footer>
   );
@@ -28,4 +29,4 @@ Footer.propTypes = {
   whiteFont: PropTypes.bool
 };
 
-export default withStyles(footerStyle)(Footer);
+export default withNamespaces("translation")(withStyles(footerStyle)(Footer));
