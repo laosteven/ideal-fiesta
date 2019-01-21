@@ -107,7 +107,7 @@ function HeaderLinks({ t, ...props }) {
           }}
           dropdownList={[
             <Link to="login" className={classes.dropdownLink}>
-              Login
+              {t("header.login")}
             </Link>,
             { divider: true },
             <div>

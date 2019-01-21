@@ -12,8 +12,15 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/landingPageSections/carouselStyle.jsx";
 
-import image2 from "assets/img/footer.jpg";
-import image3 from "assets/img/teams.jpg";
+import image1 from "assets/img/Carousel/1.jpg";
+import image2 from "assets/img/Carousel/2.jpg";
+import image3 from "assets/img/Carousel/3.jpg";
+import image4 from "assets/img/Carousel/4.jpg";
+import image5 from "assets/img/Carousel/5.jpg";
+import image6 from "assets/img/Carousel/6.jpg";
+import image7 from "assets/img/Carousel/fyujon.jpg";
+import image8 from "assets/img/Carousel/raging.jpg";
+import image9 from "assets/img/Carousel/titans.jpg";
 
 class CarouselSection extends React.Component {
   render() {
@@ -41,30 +48,131 @@ class CarouselSection extends React.Component {
                 <Carousel {...settings}>
                   <div>
                     <img
-                      src={image2}
-                      alt="Second slide"
+                      src={image1}
+                      alt="slide"
                       className="slick-image"
                     />
                     <div className="slick-caption">
                       <h4>
                         <Info className={classes.slickIcons + " slick-icons"} />
-                        {t("carousel.image.1.description")}
+                        {t("carousel.image.1")}
                       </h4>
                     </div>
                   </div>
+
+                  <div>
+                    <img
+                      src={image2}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.2")}
+                      </h4>
+                    </div>
+                  </div>
+
                   <div>
                     <img
                       src={image3}
-                      alt="Third slide"
+                      alt="slide"
                       className="slick-image"
                     />
                     <div className="slick-caption">
                       <h4>
                         <Info className={classes.slickIcons + " slick-icons"} />
-                        {t("carousel.image.2.description")}
+                        {t("carousel.image.3")}
                       </h4>
                     </div>
                   </div>
+
+                  <div>
+                    <img
+                      src={image4}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.4")}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src={image5}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.5")}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src={image6}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.6")}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src={image7}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.7")}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src={image8}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.8")}
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src={image9}
+                      alt="slide"
+                      className="slick-image"
+                    />
+                    <div className="slick-caption">
+                      <h4>
+                        <Info className={classes.slickIcons + " slick-icons"} />
+                        {t("carousel.image.9")}
+                      </h4>
+                    </div>
+                  </div>
+
+
                 </Carousel>
               </Card>
             </GridItem>

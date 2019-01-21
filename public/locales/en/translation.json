@@ -15,7 +15,7 @@
     "learn": "Learn more",
     "event": {
       "1": "Toronto Festival",
-      "2": "Montreal Challenge",
+      "2": "MTL Challenge",
       "3": "TBD"
     }
   },
@@ -33,11 +33,11 @@
     "description": "Our teams. Our family. Through the journey, we stand United.",
     "fyujon": {
       "name": "Fyūjon",
-      "description": "Formed in 2016 by the fusion of two veteran community teams of Beast: Autoboats (2010) and Mortal Komboats (2011)."
+      "description": "Formed in 2016 by the fusion of two veteran community teams of BEAST: Autoboats (2010) and Mortal Komboats (2011)."
     },
     "raging": {
       "name": "Raging",
-      "description": "Born in 2010, founders of Beast Dragon Boat Club. Originated from members of Let’s Sink Together 4 and Anglerfish."
+      "description": "Born in 2010, founders of BEAST Dragon Boat Club. Originated from members of Let’s Sink Together 4 and Anglerfish."
     },
     "titans": {
       "name": "Titans",
@@ -101,19 +101,18 @@
     }
   },
   "carousel": {
-    "title": "Pictures",
-    "description": "See us in action during our most intense moments!",
+    "title": "Photos",
+    "description": "Group pictures throughout the years of BEAST",
     "image": {
-      "1": {
-        "description": "Description"
-      },
-      "2": {
-        "description": "Description"
-      }
-    },
-    "information": {
-      "title": "How dragon boat works",
-      "description": "Dragon boat races are defined by a set amount of distance that each team will have to paddle at the same time in order to reach the finish line. A race format is usually defined by its distance: it varies from a short distance (200m), an official distance (500m) or a 2K (2km). For one boat, there are 20 paddlers: 10 for each side, and one steerer at the back."
+      "1": "MTL Challenge (2011)",
+      "2": "Drummondville (2013)",
+      "3": "Canadian National Dragon Boat - BC, Victoria (2013)",
+      "4": "MTL Challenge (2015)",
+      "5": "MTL Challenge (2018)",
+      "6": "QC Cup (2018)",
+      "7": "Fyūjon BEAST (2018)",
+      "8": "Raging BEAST (2018)",
+      "9": "Titans BEAST (2018)"
     }
   },
   "contact": {
@@ -127,11 +126,11 @@
   "about": {
     "title": "About us",
     "beast": {
-      "description": "Founded on 2010, Beast Dragon Boat Club is an Amateur Sports Team based in Montreal, Quebec. Made of three different teams of around 22 paddlers who each collaborate, manage and train with each other. "
+      "description": "Founded on 2010, BEAST Dragon Boat Club is an Amateur Sports Team based in Montreal, Quebec. Made of three different teams of around 22 paddlers who each collaborate, manage and train with each other. "
     },
     "training": {
       "title": "Training",
-      "description": "Beast training activities mainly take place at the Olympic Basin of Parc Jean-Drapeau, located east of downtown Montreal, Quebec in Canada. It takes about 10 to 15 minutes of walking to reach the Athlete's quarter.",
+      "description": "BEAST training activities mainly take place at the Olympic Basin of Parc Jean-Drapeau, located east of downtown Montreal, Quebec in Canada. It takes about 10 to 15 minutes of walking to reach the Athlete's quarter.",
       "tooltip": {
         "homepage": "Homepage",
         "location": "Google Maps"
@@ -139,7 +138,7 @@
     },
     "join": {
       "title": "Join us!",
-      "description": "Start the season right and join us for a life-changing adventure with dragon boat! Looking for a new challenge? You’ve come to the right place. The Beast Club welcomes you with open arms.",
+      "description": "Start the season right and join us for a life-changing adventure with dragon boat! Looking for a new challenge? You’ve come to the right place. The BEAST Club welcomes you with open arms.",
       "button": "Join Beast!"
     }
   },

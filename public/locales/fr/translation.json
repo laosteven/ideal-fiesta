@@ -1,143 +1,152 @@
 {
   "title": "Club de Bateau Dragon Beast",
   "header": {
-    "join": "Join Beast!",
-    "facebook": "Follow us on Facebook!",
-    "instagram": "Follow us on Instagram!",
-    "login": "Login"
+    "join": "Joindre Beast!",
+    "facebook": "Suivez nous dans Facebook!",
+    "instagram": "Suivez nous dans Instagram!",
+    "login": "Connexion"
   },
   "landing": {
-    "description": "Welcome to Beast!",
-    "calendar": "Competition days",
-    "learn": "Learn more",
+    "description": {
+      "1": "Que vous soyez débutant ou avancé, nouveau ou ancien membre, il y aura toujours une place de disponible pour vous dans le bateau.",
+      "2": "Inscrivez-vous dès cet été pour partir à l’aventure du bateau dragon!"
+    },
+    "calendar": "Journées de compétition",
+    "learn": "En savoir plus",
     "event": {
-      "1": "Toronto Festival",
-      "2": "Montreal Challenge",
+      "1": "Festival de Toronto",
+      "2": "Challenge de MTL",
       "3": "TBD"
     }
   },
   "introduction": {
-    "title": "Who are we?",
+    "title": "Qui sommes-nous?",
     "paragraph": {
-      "1": "Paragraph 1",
-      "2": "Paragraph 2"
+      "1": "Le Club de Bateau Dragon BEAST a été fondé en 2011 à Montréal lors de la fusion des équipes Anglerfish BEAST! Et Let’s Sink Together 4. ",
+      "2": "À présent, la plupart des fondateurs de BEAST font toujours partie du club. Chaque année, le club compte de nouveaux membres parmi ses rangs, dont la majorité sont amis ou famille. Pour la plupart d’entre nous, BEAST est comme une deuxième famille.",
+      "3": "BEAST compte plusieurs équipes de différents niveaux pour combler vos préférences compétitives. Du niveau communautaire au niveau sportif, on fait de tout!"
     },
-    "join": "Join Beast!"
+    "join": "S'inscrire!"
   },
   "teams": {
-    "title": "Community Teams",
-    "description": "Team description",
+    "title": "Équipes Communautaires",
+    "description": "Notre équipe. Notre famille. À travers notre parcours, nous restons unis.",
     "fyujon": {
       "name": "Fyūjon",
-      "description": "Description"
+      "description": "Formé en 2016 par le fusionnement de deux équipes communautaires de BEAST: Autoboats (2010) et Mortal Komboats (2011)."
     },
     "raging": {
       "name": "Raging",
-      "description": "Description"
+      "description": "Né en 2010, fondateurs du Club de Bateau Dragon BEAST. Originaire des membres de Let’s Sink Together 4 et Anglerfish."
     },
     "titans": {
       "name": "Titans",
-      "description": "Description"
+      "description": "Nommé Spartans (2014) auparavant, l’équipe Titans devient réalité en 2018. Une équipe avec beaucoup de potentiels et de promesses."
     }
   },
   "objective": {
-    "title": "What we do?",
-    "description": "Description",
+    "title": "Qu'est-ce qu'on fait?",
+    "description": "Les différentes activités planifiées durant la saison en tant qu’équipe.",
     "dragonboat": {
-      "title": "Dragonboat",
+      "title": "Bateau Dragon",
       "paragraph": {
-        "1": "Description",
-        "2": "Description"
+        "1": "Le bateau dragon est un sport composé d’au moins 22 membres qui pagaient ensemble sur bateau avec un objectif en commun. En trouvant l’équilibre entre divertissement et compétitivité, l’objectif de chaque pagayeur est de se surpasser soi-même à leur maximum pour courser jusqu’à la ligne d’arrivé.",
+        "2": "L’objectif principal de BEAST a toujours été d’offrir la meilleure expérience de bateau dragon à tous les membres. Pour chaque équipe, nous possédons un entraîneur ainsi que plusieurs pagayeurs expérimentés qui sont prêts à vous donner un coup de main et à offrir de l'entraînement en pair."
       }
     },
     "teambuilding": {
       "title": "Team Building",
       "paragraph": {
-        "1": "Description",
-        "2": "Description"
+        "1": "Le bateau dragon est un sport parfait pour du team-building. En effet, pour qu’une équipe s’excelle, chaque membre de l’équipe doit faire preuve de travail d’équipe, de confiance et de leadership.",
+        "2": "Chaque équipe de BEAST a pour but de permettre à ses membres de créer des liens solides, tout en découvrant le sport comme activité d’été. La saison inclut une série de pratique pour se préparer aux prochaines compétitions. Bien que gagner des médailles soit gratifiant, notre objectif principal serait toujours le développement et l’appréciation du progrès de nos pagayeurs."
       }
     },
     "outdoor": {
-      "title": "Outdoor activities",
+      "title": "Activités en plein air",
       "paragraph": {
-        "1": "Description",
-        "2": "Description"
+        "1": "En supplément du team-building du sport de bateau dragon, BEAST espère pouvoir permettre à ses membres de bâtir des amitiés et des expériences inoubliables.",
+        "2": "Plusieurs autres activités d’équipes sont organisées durant la saison. Combats archer, la promenade en canoë, des rencontres occasionnelles comme des barbecues ou une vente de livre sont quelques exemples d’activités additionnels organisées chez BEAST."
       }
     }
   },
   "season": {
-    "title": "Season",
-    "description": "Description",
-    "schedule": {
-      "title": "Schedule",
-      "paragraph": {
-        "1": "Description",
-        "2": "Description"
-      }
-    },
+    "title": "Saison",
+    "description": "Tout ce que vous avez besoin de savoir pour une expérience agréable en bateau dragon.",
     "practices": {
       "title": "Practices",
       "paragraph": {
-        "1": "Description",
-        "2": "Description"
+        "1": "Quand?",
+        "2": "Entre les mois de mai et août.",
+        "3": "Les jours de la semaine en soirée entre 6 pm à 9 pm.",
+        "4": "Fréquence de deux fois par semaine.",
+        "5": "Où? ",
+        "6": "Bassin Olympique",
+        "7": "Située au Parc Jean-Drapeau. Pour se rendre au Quartier des athlètes, il faut marcher pour environ 10 à 15 minutes.",
+        "8": "Canal Lachine",
+        "9": "Durant la semaine du Grand Prix F1, deux ou trois pratiques se dérouleront au Canal Lachine au lieu du Bassin Olympique.",
+        "10": "La durée de la saison dépendra du nombre de compétition que le Club choisira pour l’année si assez de pagayeurs manifestent leur intérêt pour un événement spécifique."
       }
     },
     "competitions": {
-      "title": "Competitions",
+      "title": "Compétitions",
       "paragraph": {
-        "1": "Description",
-        "2": "Description"
+        "1": "Les compétitions auxquelles nous participerons sont:",
+        "2": "Toronto International Dragon Boat Race Festival (TIDBRF)",
+        "3": "Nos meilleurs moments de bateau dragon se passent durant ce séjour et finit toujours avec une expérience inoubliable.",
+        "4": "Une fin de semaine entière se déroulera aux résidences de New Colleges de l’Université de Toronto.",
+        "5": "Challenge de MTL",
+        "6": "La compétition organise une catégorie de course populaire en bateau dragon qui est le fameux format de course à 2km.",
+        "7": "L’événement se déroule durant la fin de semaine. Chaque équipe doit cuisiner des bons mets santé. Accro de la cuisine, soyez prêt!"
       }
     }
   },
   "carousel": {
-    "title": "Pictures",
-    "description": "Description",
+    "title": "Photos",
+    "description": "Image de groupes à travers les années de BEAST",
     "image": {
-      "1": {
-        "description": "Description"
-      },
-      "2": {
-        "description": "Description"
-      }
-    },
-    "information": {
-      "title": "Title",
-      "description": "Description"
+      "1": "MTL Challenge (2011)",
+      "2": "Drummondville (2013)",
+      "3": "Canadian National Dragon Boat - BC, Victoria (2013)",
+      "4": "MTL Challenge (2015)",
+      "5": "MTL Challenge (2018)",
+      "6": "QC Cup (2018)",
+      "7": "Fyūjon BEAST (2018)",
+      "8": "Raging BEAST (2018)",
+      "9": "Titans BEAST (2018)"
     }
   },
   "contact": {
-    "title": "Question? Contact us!",
+    "title": "Question? Contactez nous!",
     "tooltip": {
       "facebook": "Facebook",
-      "email": "Email",
+      "email": "Courriel",
       "messenger": "Messenger"
     }
   },
   "about": {
-    "title": "About us",
+    "title": "À propos",
     "beast": {
-      "description": "description"
+      "description": "Fondé en 2010, le Club de Bateau Dragon BEAST est une Équipe de Sport Amateur basé à Montréal, Québec regroupant trois différentes équipes d’environ 22 pagayeurs qui collaborent, gèrent et s’entraînent entre eux."
     },
     "training": {
-      "title": "Training",
-      "description": "description",
+      "title": "Entraînement",
+      "description": "Les activités d’entrainement de BEAST se déroulent au Bassin Olympique du Parc Jean-Drapeau, situé à l’est du centre-ville de Montréal, Québec. Pour s'y rendre, prévoyez une marche d'une durée de 10 à 15 minutes.",
       "tooltip": {
-        "homepage": "Homepage",
+        "homepage": "Page d'accueil",
         "location": "Google Maps"
       }
     },
     "join": {
-      "title": "Join us!",
-      "description": "description",
-      "button": "Join Beast!"
+      "title": "Inscrivez vous!",
+      "description": "Débutez la saison en beauté et inscrivez vous à une aventure à couper le souffle avec du bateau dragon! Vous cherchez un défi? Ne cherchez pas plus. Le Club de Beast vous accueille avec les bras ouverts.",
+      "button": "Joindre Beast!"
     }
   },
   "login": {
     "title": "Connexion",
-    "status": "En construction",
+    "status": "À venir!",
     "button": {
-      "back": "Retourner"
+      "back": "Retour"
     }
   },
   "calendar": {

@@ -26,10 +26,13 @@ const carouselStyle = {
   },
   marginAuto: {
     marginLeft: "auto !important",
-    marginRight: "auto !important"
+    marginRight: "auto !important",
   },
   slickIcons: {
     marginRight: "5px"
+  },
+  shadow: {
+    textShadow: "0 1px 4px #000000, 0 1px 4px #000000"
   }
 };
 
