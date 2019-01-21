@@ -5,9 +5,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import { withNamespaces } from "react-i18next";
 
 // @material-ui/icons
-import InsertInvitation from "@material-ui/icons/InsertInvitation";
 import Schedule from "@material-ui/icons/Schedule";
-import Healing from "@material-ui/icons/Healing";
+import Star from "@material-ui/icons/Star";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -29,7 +28,6 @@ class SeasonSection extends React.Component {
                 <h5 className={classes.description}>
                   {t("season.description")}
                 </h5>
-                <hr className={classes.hsep} />
               </GridItem>
             </GridContainer>
             <Card className={classes.card}>
@@ -38,35 +36,53 @@ class SeasonSection extends React.Component {
                   color="danger"
                   tabs={[
                     {
-                      tabButton: t("season.schedule.title"),
-                      tabIcon: InsertInvitation,
-                      tabContent: (
-                        <span>
-                          <p>{t("season.schedule.paragraph.1")}</p>
-                          <br />
-                          <p>{t("season.schedule.paragraph.2")}</p>
-                        </span>
-                      )
-                    },
-                    {
                       tabButton: t("season.practices.title"),
                       tabIcon: Schedule,
                       tabContent: (
                         <span>
-                          <p>{t("season.practices.paragraph.1")}</p>
-                          <br />
-                          <p>{t("season.practices.paragraph.2")}</p>
+                          <p>{t("season.practices.paragraph.10")}</p>
+                          <p><b>{t("season.practices.paragraph.1")}</b></p>
+                        <ul>
+                            <li>{t("season.practices.paragraph.2")}</li>
+                            <li>{t("season.practices.paragraph.3")}</li>
+                            <li>{t("season.practices.paragraph.4")}</li>
+                        </ul>
+
+                          <p><b>{t("season.practices.paragraph.5")}</b></p>
+                          <ul>
+                            <li><b>{t("season.practices.paragraph.6")}</b></li>
+                            <ul>
+                              <li>{t("season.practices.paragraph.7")}</li>
+                            </ul>
+                            <li><b>{t("season.practices.paragraph.8")}</b></li>
+                            <ul>
+                              <li>{t("season.practices.paragraph.9")}</li>
+                            </ul>
+                          </ul>
                         </span>
                       )
                     },
                     {
                       tabButton: t("season.competitions.title"),
-                      tabIcon: Healing,
+                      tabIcon: Star,
                       tabContent: (
                         <span>
                           <p>{t("season.competitions.paragraph.1")}</p>
-                          <br />
-                          <p>{t("season.competitions.paragraph.2")}</p>
+
+                          <ul>
+                            <li><b>{t("season.competitions.paragraph.2")}</b></li>
+                              <ul>
+                                <li>{t("season.competitions.paragraph.3")}</li>
+                                <li>{t("season.competitions.paragraph.4")}</li>
+                              </ul>
+                          </ul>
+                          <ul>
+                            <li><b>{t("season.competitions.paragraph.5")}</b></li>
+                            <ul>
+                              <li>{t("season.competitions.paragraph.6")}</li>
+                              <li>{t("season.competitions.paragraph.7")}</li>
+                            </ul>
+                          </ul>
                         </span>
                       )
                     }

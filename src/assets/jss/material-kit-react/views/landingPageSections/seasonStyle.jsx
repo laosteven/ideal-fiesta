@@ -13,12 +13,9 @@ const seasonStyle = {
     textDecoration: "none",
     color: "#fff"
   },
-  hsep: {
-    width: "50px",
-    margin: "25px auto"
-  },
   description: {
-    color: "#fff"
+    color: "#fff",
+    marginBottom: "50px"
   },
   card: {
     padding: "60px 0 90px",

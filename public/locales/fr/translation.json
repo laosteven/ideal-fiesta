@@ -25,7 +25,7 @@
     "join": "Join Beast!"
   },
   "teams": {
-    "title": "Teams",
+    "title": "Community Teams",
     "description": "Team description",
     "fyujon": {
       "name": "Fyūjon",
@@ -66,7 +66,7 @@
     }
   },
   "season": {
-    "title": "What we do?",
+    "title": "Season",
     "description": "Description",
     "schedule": {
       "title": "Schedule",

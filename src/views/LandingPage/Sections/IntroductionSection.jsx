@@ -28,12 +28,15 @@ class IntroductionSection extends React.Component {
               <br />
               <br />
               {t("introduction.paragraph.2")}
+              <br />
+              <br />
+              {t("introduction.paragraph.3")}
             </p>
 
             <Button
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/BeastDragonboatClub"
+              href="https://goo.gl/forms/c5IfFmw6StvCzap13"
               color="danger"
               round
             >

@@ -22,7 +22,7 @@ class LandingSection extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={5}>
             <h1 className={classes.title}>{t("title")}</h1>
-            <h5>{t("landing.description")}</h5>
+            <h4 className={classes.description}>{t("landing.description.1")} {t("landing.description.2")}</h4>
             <br />
             <Link
               className={classes.link}

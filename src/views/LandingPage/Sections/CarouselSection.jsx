@@ -32,7 +32,6 @@ class CarouselSection extends React.Component {
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>{t("carousel.title")}</h2>
             <h5 className={classes.description}>{t("carousel.description")}</h5>
-            <hr className={classes.hsep} />
           </GridItem>
         </GridContainer>
         <div className={classes.container}>
@@ -70,14 +69,14 @@ class CarouselSection extends React.Component {
               </Card>
             </GridItem>
 
-            <GridItem xs={12} sm={12} md={6}>
+            {/* <GridItem xs={12} sm={12} md={6}>
               <h4 className={classes.cardTitle}>
                 {t("carousel.information.title")}
               </h4>
               <p className={classes.description}>
                 {t("carousel.information.description")}
               </p>
-            </GridItem>
+            </GridItem> */}
           </GridContainer>
         </div>
       </div>

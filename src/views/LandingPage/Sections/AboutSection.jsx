@@ -45,6 +45,7 @@ class AboutSection extends React.Component {
                     <Button
                       justIcon
                       color="transparent"
+                      href="https://www.instagram.com/beast_dragonboatclub"
                       className={classes.margin5}
                     >
                       <i className={classes.socials + " fab fa-instagram"} />
@@ -86,6 +87,8 @@ class AboutSection extends React.Component {
                   >
                     <Button
                       justIcon
+                      target="_blank"
+                      href="http://www.parcjeandrapeau.com/en/olympic-basin-montreal/"
                       color="transparent"
                       className={classes.margin5}
                     >
@@ -100,6 +103,8 @@ class AboutSection extends React.Component {
                   >
                     <Button
                       justIcon
+                      target="_blank"
+                      href="https://goo.gl/maps/WBsqcg29hLT2"
                       color="transparent"
                       className={classes.margin5}
                     >
@@ -124,7 +129,7 @@ class AboutSection extends React.Component {
                 <CardFooter className={classes.footerButton}>
                   <Button
                     target="_blank"
-                    href="https://www.facebook.com/BeastDragonboatClub"
+                    href="https://goo.gl/forms/c5IfFmw6StvCzap13"
                     rel="noopener noreferrer"
                     color="danger"
                     round

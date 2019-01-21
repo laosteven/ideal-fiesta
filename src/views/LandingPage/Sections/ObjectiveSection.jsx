@@ -27,7 +27,6 @@ class ObjectiveSection extends React.Component {
             <h5 className={classes.description}>
               {t("objective.description")}
             </h5>
-            <hr className={classes.hsep} />
           </GridItem>
         </GridContainer>
 
@@ -66,10 +65,10 @@ class ObjectiveSection extends React.Component {
                 <b>{t("objective.teambuilding.title")}</b>
               </h4>
               <p className={classes.justify}>
-                {t("objective.dragonboat.paragraph.1")}
+                {t("objective.teambuilding.paragraph.1")}
                 <br />
                 <br />
-                {t("objective.dragonboat.paragraph.2")}
+                {t("objective.teambuilding.paragraph.2")}
               </p>
             </GridItem>
           </GridContainer>

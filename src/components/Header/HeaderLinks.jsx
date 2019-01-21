@@ -34,7 +34,7 @@ function HeaderLinks({ t, ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/BeastDragonboatClub"
+            href="https://goo.gl/forms/c5IfFmw6StvCzap13"
             target="_blank"
             className={classes.navLink}
           >

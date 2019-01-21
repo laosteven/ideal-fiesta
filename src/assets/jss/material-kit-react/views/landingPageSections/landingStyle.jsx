@@ -24,6 +24,9 @@ const landingStyle = {
     color: "#FFFFFF",
     textDecoration: "none"
   },
+  description: {
+    textAlign: "justify"
+  },
   divider: {
     marginTop: "30px",
     marginBottom: "0px",

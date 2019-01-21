@@ -26,7 +26,6 @@ class TeamsSection extends React.Component {
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>{t("teams.title")}</h2>
             <h5 className={classes.description}>{t("teams.description")}</h5>
-            <hr className={classes.hsep} />
           </GridItem>
         </GridContainer>
         <div>
