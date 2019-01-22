@@ -102,18 +102,7 @@
   },
   "carousel": {
     "title": "Photos",
-    "description": "Group pictures throughout the years of BEAST",
-    "image": {
-      "1": "MTL Challenge (2011)",
-      "2": "Drummondville (2013)",
-      "3": "Canadian National Dragon Boat - BC, Victoria (2013)",
-      "4": "MTL Challenge (2015)",
-      "5": "MTL Challenge (2018)",
-      "6": "QC Cup (2018)",
-      "7": "Fyūjon BEAST (2018)",
-      "8": "Raging BEAST (2018)",
-      "9": "Titans BEAST (2018)"
-    }
+    "description": "See us in action during our most intense moments!"
   },
   "contact": {
     "title": "Question? Contact us!",
