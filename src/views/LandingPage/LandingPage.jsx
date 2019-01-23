@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import { withNamespaces } from "react-i18next";
-import LazyLoad from "react-lazyload";
-
 // @material-ui/icons
 
 // core components
@@ -54,53 +52,39 @@ class LandingPage extends React.Component {
         </div>
 
         <div className={classNames(classes.main)}>
-          <LazyLoad>
-            <div id="#whoarewe" className={classes.container}>
-              <IntroductionSection />
-            </div>
-          </LazyLoad>
+          <div id="#whoarewe" className={classes.container}>
+            <IntroductionSection />
+          </div>
 
-          <LazyLoad>
-            <div id="#teams" className={classes.bgTeams}>
-              <div className={classes.container}>
-                <TeamsSection />
-              </div>
+          <div id="#teams" className={classes.bgTeams}>
+            <div className={classes.container}>
+              <TeamsSection />
             </div>
-          </LazyLoad>
+          </div>
 
-          <LazyLoad>
-            <div id="#whatwedo" className={classes.container}>
-              <ObjectiveSection />
-            </div>
-          </LazyLoad>
+          <div id="#whatwedo" className={classes.container}>
+            <ObjectiveSection />
+          </div>
 
-          <LazyLoad>
-            <div id="#season" className={classes.bgSeason}>
-              <div className={classes.container} />
-              <SeasonSection />
-            </div>
-          </LazyLoad>
+          <div id="#season" className={classes.bgSeason}>
+            <div className={classes.container} />
+            <SeasonSection />
+          </div>
 
-          <LazyLoad>
-            <div id="#pictures" className={classes.grey}>
-              <div className={classes.container}>
-                <CarouselSection />
-              </div>
+          <div id="#pictures" className={classes.grey}>
+            <div className={classes.container}>
+              <CarouselSection />
             </div>
-          </LazyLoad>
+          </div>
 
-          <LazyLoad>
-            <div id="#aboutus" className={classes.container}>
-              <ContactSection />
-            </div>
-          </LazyLoad>
+          <div id="#aboutus" className={classes.container}>
+            <ContactSection />
+          </div>
 
-          <LazyLoad>
-            <div className={classes.bgFooter}>
-              <div className={classes.container} />
-              <AboutSection />
-            </div>
-          </LazyLoad>
+          <div className={classes.bgFooter}>
+            <div className={classes.container} />
+            <AboutSection />
+          </div>
         </div>
 
         <Footer />
