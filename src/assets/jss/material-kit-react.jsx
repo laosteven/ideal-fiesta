@@ -24,15 +24,15 @@ const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
 };
 
-const conatinerFluid = {
-  paddingRight: "15px",
-  paddingLeft: "15px",
+const containerFluid = {
+  paddingRight: "45px",
+  paddingLeft: "30px",
   marginRight: "auto",
   marginLeft: "auto",
   width: "100%"
 };
 const container = {
-  ...conatinerFluid,
+  ...containerFluid,
   "@media (min-width: 576px)": {
     maxWidth: "540px"
   },
@@ -184,7 +184,7 @@ export {
   drawerWidth,
   transition,
   container,
-  conatinerFluid,
+  containerFluid,
   boxShadow,
   card,
   defaultFont,

@@ -39,27 +39,15 @@ class CarouselSection extends React.Component {
               <Card carousel>
                 <Carousel {...settings}>
                   <div>
-                    <img
-                      src={image1}
-                      alt="slide"
-                      className="slick-image"
-                    />
+                    <img src={image1} alt="slide" className="slick-image" />
                   </div>
 
                   <div>
-                    <img
-                      src={image2}
-                      alt="slide"
-                      className="slick-image"
-                    />
+                    <img src={image2} alt="slide" className="slick-image" />
                   </div>
 
                   <div>
-                    <img
-                      src={image3}
-                      alt="slide"
-                      className="slick-image"
-                    />
+                    <img src={image3} alt="slide" className="slick-image" />
                   </div>
                 </Carousel>
               </Card>

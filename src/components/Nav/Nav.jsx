@@ -5,10 +5,12 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import { withStyles } from "@material-ui/core";
 import { Link } from "react-scroll";
+
 import navStyle from "assets/jss/material-kit-react/components/navStyle.jsx";
 
 function Nav({ ...props }) {
   const { classes, sections } = props;
+
   return (
     <nav className={classes.verticalNav}>
       <ul className={classes.ul}>

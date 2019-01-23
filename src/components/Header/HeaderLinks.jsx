@@ -121,13 +121,13 @@ function HeaderLinks({ t, ...props }) {
                   English
                 </a>
               ) : (
-                  <a
+                <a
                   onClick={() => changeLanguage("fr")}
                   color="transparent"
                   target="_blank"
                   className={classes.dropdownLink}
                 >
-                    Français
+                  Français
                 </a>
               )}
             </div>

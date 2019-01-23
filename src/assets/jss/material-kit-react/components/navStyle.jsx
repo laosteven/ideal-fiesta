@@ -1,18 +1,19 @@
 import { dangerColor } from "assets/jss/material-kit-react.jsx";
 
 const navStyle = {
-  // "@media (max-width: 800px)": {
-  //   verticalNav: {
-  //     display: "none"
-  //   }
-  // },
+  "@media (max-width: 800px)": {
+    verticalNav: {
+      right: "-170px !important"
+    }
+  },
   verticalNav: {
     position: "fixed",
-    right: "-140px",
+    right: "-160px",
     top: "50%",
     bottom: "auto",
     transform: "translateY(-50%)",
     zIndex: "900",
+    width: "200px",
     "& a": {
       display: "inline-block",
       backfaceVisibility: "hidden",
@@ -80,6 +81,19 @@ const navStyle = {
     fontWeight: "600",
     opacity: "0",
     transformOrigin: "100% 50%"
+  },
+  icons: {
+    width: "17px",
+    height: "17px"
+  },
+  buttonNav: {
+    position: "fixed",
+    right: "5vh",
+    top: "88%",
+    bottom: "auto",
+    zIndex: "900",
+    color: "#999999",
+    backgroundColor: "#FFFFFF"
   }
 };
 export default navStyle;

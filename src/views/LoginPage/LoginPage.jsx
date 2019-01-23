@@ -31,7 +31,7 @@ class LoginPage extends React.Component {
   }
   componentDidMount() {
     setTimeout(
-      function () {
+      function() {
         this.setState({ cardAnimaton: "" });
       }.bind(this),
       200
@@ -55,7 +55,10 @@ class LoginPage extends React.Component {
         <div
           className={classes.pageHeader}
           style={{
-            backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" + image + ")",
+            backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(" +
+              image +
+              ")",
             backgroundSize: "cover",
             backgroundPosition: "top center"
           }}
@@ -69,13 +72,10 @@ class LoginPage extends React.Component {
                       <h4>{t("login.title")}</h4>
                     </CardHeader>
                     <p className={classes.divider}>{t("login.status")}</p>
-                    <CardBody>
-                    </CardBody>
+                    <CardBody />
                     <CardFooter className={classes.cardFooter}>
                       <Link to="/" className={classes.dropdownLink}>
-                      <Button color="danger">
-                          {t("login.button.back")}
-                      </Button>
+                        <Button color="danger">{t("login.button.back")}</Button>
                       </Link>
                     </CardFooter>
                   </form>
@@ -90,4 +90,6 @@ class LoginPage extends React.Component {
   }
 }
 
-export default withNamespaces("translation")(withStyles(loginPageStyle)(LoginPage));
+export default withNamespaces("translation")(
+  withStyles(loginPageStyle)(LoginPage)
+);

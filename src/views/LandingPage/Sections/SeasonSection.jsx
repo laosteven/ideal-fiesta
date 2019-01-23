@@ -41,20 +41,28 @@ class SeasonSection extends React.Component {
                       tabContent: (
                         <span>
                           <p>{t("season.practices.paragraph.10")}</p>
-                          <p><b>{t("season.practices.paragraph.1")}</b></p>
-                        <ul>
+                          <p>
+                            <b>{t("season.practices.paragraph.1")}</b>
+                          </p>
+                          <ul>
                             <li>{t("season.practices.paragraph.2")}</li>
                             <li>{t("season.practices.paragraph.3")}</li>
                             <li>{t("season.practices.paragraph.4")}</li>
-                        </ul>
+                          </ul>
 
-                          <p><b>{t("season.practices.paragraph.5")}</b></p>
+                          <p>
+                            <b>{t("season.practices.paragraph.5")}</b>
+                          </p>
                           <ul>
-                            <li><b>{t("season.practices.paragraph.6")}</b></li>
+                            <li>
+                              <b>{t("season.practices.paragraph.6")}</b>
+                            </li>
                             <ul>
                               <li>{t("season.practices.paragraph.7")}</li>
                             </ul>
-                            <li><b>{t("season.practices.paragraph.8")}</b></li>
+                            <li>
+                              <b>{t("season.practices.paragraph.8")}</b>
+                            </li>
                             <ul>
                               <li>{t("season.practices.paragraph.9")}</li>
                             </ul>
@@ -70,14 +78,18 @@ class SeasonSection extends React.Component {
                           <p>{t("season.competitions.paragraph.1")}</p>
 
                           <ul>
-                            <li><b>{t("season.competitions.paragraph.2")}</b></li>
-                              <ul>
-                                <li>{t("season.competitions.paragraph.3")}</li>
-                                <li>{t("season.competitions.paragraph.4")}</li>
-                              </ul>
+                            <li>
+                              <b>{t("season.competitions.paragraph.2")}</b>
+                            </li>
+                            <ul>
+                              <li>{t("season.competitions.paragraph.3")}</li>
+                              <li>{t("season.competitions.paragraph.4")}</li>
+                            </ul>
                           </ul>
                           <ul>
-                            <li><b>{t("season.competitions.paragraph.5")}</b></li>
+                            <li>
+                              <b>{t("season.competitions.paragraph.5")}</b>
+                            </li>
                             <ul>
                               <li>{t("season.competitions.paragraph.6")}</li>
                               <li>{t("season.competitions.paragraph.7")}</li>
