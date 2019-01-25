@@ -36,7 +36,7 @@ class IntroductionSection extends React.Component {
             <Button
               target="_blank"
               rel="noopener noreferrer"
-              href="https://goo.gl/forms/c5IfFmw6StvCzap13"
+              href="https://stevenlao.typeform.com/to/XnhAe6"
               color="danger"
               round
             >

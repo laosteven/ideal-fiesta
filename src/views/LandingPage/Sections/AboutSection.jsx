@@ -129,7 +129,7 @@ class AboutSection extends React.Component {
                 <CardFooter className={classes.footerButton}>
                   <Button
                     target="_blank"
-                    href="https://goo.gl/forms/c5IfFmw6StvCzap13"
+                    href="https://stevenlao.typeform.com/to/XnhAe6"
                     rel="noopener noreferrer"
                     color="danger"
                     round

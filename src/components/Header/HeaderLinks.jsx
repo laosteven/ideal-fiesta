@@ -34,7 +34,7 @@ function HeaderLinks({ t, ...props }) {
         >
           <Button
             color="transparent"
-            href="https://goo.gl/forms/c5IfFmw6StvCzap13"
+            href="https://stevenlao.typeform.com/to/XnhAe6"
             target="_blank"
             className={classes.navLink}
           >
