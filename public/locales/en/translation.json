@@ -4,6 +4,7 @@
     "join": "Join Beast!",
     "facebook": "Follow us on Facebook!",
     "instagram": "Follow us on Instagram!",
+    "language": "Changer en Français",
     "login": "Login"
   },
   "landing": {
@@ -14,9 +15,9 @@
     "calendar": "Competition days",
     "learn": "Learn more",
     "event": {
-      "1": "Toronto Festival",
+      "1": "Lachine Knockout",
       "2": "MTL Challenge",
-      "3": "TBD"
+      "3": "Rawdon"
     }
   },
   "introduction": {

@@ -50,13 +50,13 @@ class LandingSection extends React.Component {
                 <h3 className={classes.eventHeader}>{t("landing.calendar")}</h3>
                 <div className={classes.eventContainer}>
                   <CalendarEvent
-                    link="http://www.gwndragonboat.com/default.asp?id=toronto-island"
-                    dayStart="15"
-                    dayEnd="16"
+                    link="https://www.missiondragonboat.com/en/event/lachine-knock-out/"
+                    dayStart="08"
+                    dayEnd="09"
                     month={t("calendar.month.jun")}
                     title={t("landing.event.1")}
                     time="09:00 AM"
-                    location="9 Queens Quay W, Toronto, ON M5J 2H3"
+                    location="Lachine Canoe Club, Lachine, QC H8S 2N7"
                     color="#fb4646"
                   />
                   <CalendarEvent
@@ -70,7 +70,7 @@ class LandingSection extends React.Component {
                     color="#00adff"
                   />
                   <CalendarEvent
-                    dayStart="01"
+                    dayStart="?"
                     month={t("calendar.month.aug")}
                     title={t("landing.event.3")}
                     time="TBD"

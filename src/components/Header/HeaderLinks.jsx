@@ -32,14 +32,25 @@ function HeaderLinks({ t, ...props }) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            color="transparent"
-            href="https://stevenlao.typeform.com/to/XnhAe6"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fa fa-user-plus"} />
-          </Button>
+          {i18n.language == "fr" ? (
+            <Button
+              color="transparent"
+              href="https://stevenlao.typeform.com/to/twCx5e"
+              target="_blank"
+              className={classes.navLink}
+            >
+              <i className={classes.socialIcons + " fa fa-user-plus"} />
+            </Button>
+          ) : (
+            <Button
+              color="transparent"
+              href="https://stevenlao.typeform.com/to/XnhAe6"
+              target="_blank"
+              className={classes.navLink}
+            >
+              <i className={classes.socialIcons + " fa fa-user-plus"} />
+            </Button>
+          )}
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -108,31 +119,35 @@ function HeaderLinks({ t, ...props }) {
           dropdownList={[
             <Link to="login" className={classes.dropdownLink}>
               {t("header.login")}
-            </Link>,
-            { divider: true },
-            <div>
-              {i18n.language == "fr" ? (
-                <a
-                  onClick={() => changeLanguage("en")}
-                  color="transparent"
-                  target="_blank"
-                  className={classes.dropdownLink}
-                >
-                  English
-                </a>
-              ) : (
-                <a
-                  onClick={() => changeLanguage("fr")}
-                  color="transparent"
-                  target="_blank"
-                  className={classes.dropdownLink}
-                >
-                  Français
-                </a>
-              )}
-            </div>
+            </Link>
           ]}
         />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="language-tooltip"
+          title={t("header.language")}
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          {i18n.language == "fr" ? (
+            <Button
+              onClick={() => changeLanguage("en")}
+              color="transparent"
+              target="_blank"
+            >
+              EN
+            </Button>
+          ) : (
+            <Button
+              onClick={() => changeLanguage("fr")}
+              color="transparent"
+              target="_blank"
+            >
+              FR
+            </Button>
+          )}
+        </Tooltip>
       </ListItem>
     </List>
   );

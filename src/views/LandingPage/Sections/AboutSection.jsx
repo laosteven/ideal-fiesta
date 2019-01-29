@@ -2,6 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import { withNamespaces } from "react-i18next";
+import i18n from "i18next";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -127,16 +128,29 @@ class AboutSection extends React.Component {
                 </CardBody>
 
                 <CardFooter className={classes.footerButton}>
-                  <Button
-                    target="_blank"
-                    href="https://stevenlao.typeform.com/to/XnhAe6"
-                    rel="noopener noreferrer"
-                    color="danger"
-                    round
-                  >
-                    {t("about.join.button")}
-                    <i className={classes.userSpacing + " fa fa-user-plus"} />
-                  </Button>
+                  {i18n.language === "fr" ? (
+                    <Button
+                      target="_blank"
+                      href="https://stevenlao.typeform.com/to/twCx5e"
+                      rel="noopener noreferrer"
+                      color="danger"
+                      round
+                    >
+                      {t("about.join.button")}
+                      <i className={classes.userSpacing + " fa fa-user-plus"} />
+                    </Button>
+                  ) : (
+                    <Button
+                      target="_blank"
+                      href="https://stevenlao.typeform.com/to/XnhAe6"
+                      rel="noopener noreferrer"
+                      color="danger"
+                      round
+                    >
+                      {t("about.join.button")}
+                      <i className={classes.userSpacing + " fa fa-user-plus"} />
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             </GridItem>

@@ -2,6 +2,7 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import { withNamespaces } from "react-i18next";
+import i18n from "i18next";
 // @material-ui/icons
 
 // core components
@@ -33,16 +34,29 @@ class IntroductionSection extends React.Component {
               {t("introduction.paragraph.3")}
             </p>
 
-            <Button
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://stevenlao.typeform.com/to/XnhAe6"
-              color="danger"
-              round
-            >
-              {t("introduction.join")}
-              <i className={classes.userSpacing + " fa fa-user-plus"} />
-            </Button>
+            {i18n.language === "fr" ? (
+              <Button
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://stevenlao.typeform.com/to/twCx5e"
+                color="danger"
+                round
+              >
+                {t("introduction.join")}
+                <i className={classes.userSpacing + " fa fa-user-plus"} />
+              </Button>
+            ) : (
+              <Button
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://stevenlao.typeform.com/to/XnhAe6"
+                color="danger"
+                round
+              >
+                {t("introduction.join")}
+                <i className={classes.userSpacing + " fa fa-user-plus"} />
+              </Button>
+            )}
           </GridItem>
         </GridContainer>
       </div>
