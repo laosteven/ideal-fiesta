@@ -70,13 +70,13 @@ class LandingSection extends React.Component {
                     color="#00adff"
                   />
                   <CalendarEvent
-                    dayStart="?"
+                    link="https://22dragonsrawdon.org/"
+                    dayStart="10"
                     month={t("calendar.month.aug")}
                     title={t("landing.event.3")}
-                    time="TBD"
-                    location="TBD"
+                    time="09:00 AM"
+                    location="Plage Municipale De Rawdon, Rawdon, QC J0K 1S0"
                     color="#fbaf5d"
-                    isDisabled
                   />
                 </div>
               </CardBody>
