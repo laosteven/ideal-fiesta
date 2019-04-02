@@ -35,7 +35,8 @@ function HeaderLinks({ t, ...props }) {
           {i18n.language == "fr" ? (
             <Button
               color="transparent"
-              href="https://stevenlao.typeform.com/to/twCx5e"
+              // href="https://stevenlao.typeform.com/to/twCx5e"
+              href="https://forms.gle/QNzZ1D95T7kkKAXk7"
               target="_blank"
               className={classes.navLink}
             >
@@ -44,7 +45,8 @@ function HeaderLinks({ t, ...props }) {
           ) : (
             <Button
               color="transparent"
-              href="https://stevenlao.typeform.com/to/XnhAe6"
+              // href="https://stevenlao.typeform.com/to/XnhAe6"
+              href="https://forms.gle/QNzZ1D95T7kkKAXk7"
               target="_blank"
               className={classes.navLink}
             >

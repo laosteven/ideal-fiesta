@@ -38,7 +38,8 @@ class IntroductionSection extends React.Component {
               <Button
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://stevenlao.typeform.com/to/twCx5e"
+                // href="https://stevenlao.typeform.com/to/twCx5e"
+                href="https://forms.gle/QNzZ1D95T7kkKAXk7"
                 color="danger"
                 round
               >
@@ -49,7 +50,8 @@ class IntroductionSection extends React.Component {
               <Button
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://stevenlao.typeform.com/to/XnhAe6"
+                // href="https://stevenlao.typeform.com/to/XnhAe6"
+                href="https://forms.gle/QNzZ1D95T7kkKAXk7"
                 color="danger"
                 round
               >

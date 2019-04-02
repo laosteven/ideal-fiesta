@@ -131,7 +131,8 @@ class AboutSection extends React.Component {
                   {i18n.language === "fr" ? (
                     <Button
                       target="_blank"
-                      href="https://stevenlao.typeform.com/to/twCx5e"
+                      // href="https://stevenlao.typeform.com/to/twCx5e"
+                      href="https://forms.gle/QNzZ1D95T7kkKAXk7"
                       rel="noopener noreferrer"
                       color="danger"
                       round
@@ -142,7 +143,8 @@ class AboutSection extends React.Component {
                   ) : (
                     <Button
                       target="_blank"
-                      href="https://stevenlao.typeform.com/to/XnhAe6"
+                      // href="https://stevenlao.typeform.com/to/XnhAe6"
+                      href="https://forms.gle/QNzZ1D95T7kkKAXk7"
                       rel="noopener noreferrer"
                       color="danger"
                       round
