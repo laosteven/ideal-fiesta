@@ -39,7 +39,8 @@ const landingStyle = {
     borderTop: "1px solid #e5e5e5",
     borderRadius: "5px",
     overflow: "hidden",
-    marginBottom: "15px"
+    marginBottom: "15px",
+    marginTop: "12px",
   },
   eventHeader: {
     fontWeight: "900",
