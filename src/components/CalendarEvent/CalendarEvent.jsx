@@ -5,6 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+import Countdown from 'react-countdown-now';
 
 // @material-ui/icons
 import Schedule from "@material-ui/icons/Schedule";
@@ -21,7 +22,6 @@ function CalendarEvent({ ...props }) {
     dayEnd,
     month,
     title,
-    time,
     location,
     color,
     isDisabled
@@ -30,6 +30,15 @@ function CalendarEvent({ ...props }) {
   const cancelledClass = classNames({
     [classes.eventRowCancelled]: isDisabled
   });
+
+  const renderer = ({ days }) => {
+    if (days === 0)
+      return <span>Done!</span>;
+    else
+      return <span>In {days} days</span>;
+  };
+
+  const currentYear = new Date().getFullYear();
 
   return (
     <a href={link} rel="noopener noreferrer" target="_blank">
@@ -49,7 +58,7 @@ function CalendarEvent({ ...props }) {
         <div className={classes.eventDetails}>
           <div className={classes.eventTitle}>{title}</div>
           <div className={classes.eventDesc}>
-            <Schedule className={classes.eventIcon} /> {time}
+            <Schedule className={classes.eventIcon} /> <Countdown renderer={renderer} date={new Date(dayStart + month + currentYear)} />
             <br />
             <LocationOn className={classes.eventIcon} /> {location}
           </div>

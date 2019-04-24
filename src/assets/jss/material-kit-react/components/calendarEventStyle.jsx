@@ -82,7 +82,8 @@ const calendarEventStyle = {
     marginTop: "-1px"
   },
   eventIcon: {
-    fontSize: "11px"
+    fontSize: "11px",
+    marginBottom: "-1px"
   }
 };
 
