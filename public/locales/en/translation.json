@@ -14,6 +14,8 @@
     },
     "calendar": "Competition days",
     "learn": "Learn more",
+    "community": "Community",
+    "sports": "Sports",
     "event": {
       "1": "Lachine Knockout",
       "2": "MTL Challenge",
@@ -153,6 +155,10 @@
       "oct": "oct",
       "nov": "nov",
       "dec": "dec"
-    }
+    },
+    "in": "In",
+    "days": "days",
+    "done": "Done!",
+    "today": "Today!"
   }
 }

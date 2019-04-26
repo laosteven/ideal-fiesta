@@ -50,7 +50,7 @@ class LandingSection extends React.Component {
               headerColor="danger"
               tabs={[
                 {
-                  tabName: "Community",
+                  tabName: t("landing.community"),
                   tabIcon: Favorite,
                   tabContent: (
                     <div>
@@ -86,7 +86,7 @@ class LandingSection extends React.Component {
                   )
                 },
                 {
-                  tabName: "Competitive",
+                  tabName: t("landing.sports"),
                   tabIcon: Grade,
                   tabContent: (
                     <div>

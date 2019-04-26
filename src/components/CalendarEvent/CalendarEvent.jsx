@@ -1,11 +1,12 @@
 import React from "react";
-// nodejs library that concatenates classes
+// nodejs library that concatenates classes 
 import classNames from "classnames";
+import { withNamespaces } from "react-i18next";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Countdown from 'react-countdown-now';
+import moment from "moment";
 
 // @material-ui/icons
 import Schedule from "@material-ui/icons/Schedule";
@@ -14,7 +15,7 @@ import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import calendarEventStyle from "assets/jss/material-kit-react/components/calendarEventStyle.jsx";
 
-function CalendarEvent({ ...props }) {
+function CalendarEvent({ t, ...props }) {
   const {
     classes,
     link,
@@ -31,14 +32,16 @@ function CalendarEvent({ ...props }) {
     [classes.eventRowCancelled]: isDisabled
   });
 
-  const renderer = ({ days }) => {
-    if (days === 0)
-      return <span>Done!</span>;
+  const countdown = () => {
+    var hotfixmonth = month === "aoû" ? "aug" : month;
+    var countdown = moment(moment().year() + hotfixmonth + dayStart, "YYYYMMMDD").diff(moment(), 'days');
+    if (countdown === 0)
+      return <span>{t("calendar.today")}</span>;
+    else if (countdown < 0)
+      return <span>{t("calendar.done")}</span>;
     else
-      return <span>In {days} days</span>;
+      return <span>{t("calendar.in")} {countdown} {t("calendar.days")}</span>;
   };
-
-  const currentYear = new Date().getFullYear();
 
   return (
     <a href={link} rel="noopener noreferrer" target="_blank">
@@ -58,7 +61,7 @@ function CalendarEvent({ ...props }) {
         <div className={classes.eventDetails}>
           <div className={classes.eventTitle}>{title}</div>
           <div className={classes.eventDesc}>
-            <Schedule className={classes.eventIcon} /> <Countdown renderer={renderer} date={new Date(dayStart + month + currentYear)} />
+            <Schedule className={classes.eventIcon} /> {countdown()}
             <br />
             <LocationOn className={classes.eventIcon} /> {location}
           </div>
@@ -80,4 +83,6 @@ CalendarEvent.propTypes = {
   isDisabled: PropTypes.bool
 };
 
-export default withStyles(calendarEventStyle)(CalendarEvent);
+export default withNamespaces("translation")( 
+  withStyles(calendarEventStyle)(CalendarEvent)
+);
