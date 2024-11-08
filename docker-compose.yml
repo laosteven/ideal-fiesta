@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+    ideal-fiesta:
+        image: 'laosteven/beast-landing:latest'
+        ports:
+            - '3010:80'
